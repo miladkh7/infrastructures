@@ -1,0 +1,93 @@
+version: '3.5'
+services:
+  redis:
+    image: redis
+
+
+  postgres:
+    image: 'eeacms/postgres:9.5'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DBNAME: sentry
+      POSTGRES_DBUSER: sentry
+      POSTGRES_DBPASS: sentry
+    volumes:
+      - pgdb:/var/lib/postgresql/data
+
+
+  sentry:
+    image: sentry:latest
+    links:
+    - redis
+    - postgres
+    ports:
+    - 9000:9000
+    stdin_open: true
+    tty: true
+    environment:
+      SENTRY_SECRET_KEY: verysecret
+      SENTRY_POSTGRES_HOST: postgres
+      SENTRY_DB_USER: postgres
+      SENTRY_DB_PASSWORD: postgres
+      SENTRY_REDIS_HOST: redis
+
+  sentry-cron:
+    image: sentry:latest
+    links:
+    - redis
+    - postgres
+    command: "sentry run cron"
+    environment:
+      SENTRY_SECRET_KEY: verysecret
+      SENTRY_POSTGRES_HOST: postgres
+      SENTRY_DB_USER: postgres
+      SENTRY_DB_PASSWORD: postgres
+      SENTRY_REDIS_HOST: redis
+
+  # sentry-migrate:
+  #   image: sentry:latest
+  #   links:
+  #     - redis
+  #     - postgres
+  #     - sentry
+  #   command: "sentry upgrade"
+  #   environment:
+  #     SENTRY_SECRET_KEY: verysecret
+  #     POSTGRES_USER: postgres
+  #     POSTGRES_PASSWORD: postgres
+  #     POSTGRES_DBNAME: sentry
+  #     POSTGRES_DBUSER: sentry
+  #     POSTGRES_DBPASS: sentry
+
+
+  # sentry-createuser:
+  #   image: sentry:latest
+  #   links:
+  #     - redis
+  #     - postgres
+  #     - sentry-migrate
+  #   command: "sentry createuser --email testuser@mistsys.com --password logmein123 --superuser"
+  #   environment:
+  #     SENTRY_SECRET_KEY: verysecret
+  #     POSTGRES_USER: postgres
+  #     POSTGRES_PASSWORD: postgres
+  #     POSTGRES_DBNAME: sentry
+  #     POSTGRES_DBUSER: sentry
+  #     POSTGRES_DBPASS: sentry
+
+  sentry-worker:
+    image: sentry:latest
+    links:
+    - redis
+    - postgres
+    command: "sentry run worker"
+    environment:
+        SENTRY_SECRET_KEY: verysecret
+        SENTRY_POSTGRES_HOST: postgres
+        SENTRY_DB_USER: postgres
+        SENTRY_DB_PASSWORD: postgres
+        SENTRY_REDIS_HOST: redis
+
+volumes:
+  pgdb:

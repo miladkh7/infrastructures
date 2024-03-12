@@ -1,0 +1,41 @@
+version: '3.8'
+services:
+  mongodb_container:
+    image: mongo:latest
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: rootpassword
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb_data_container:/data/db
+    networks:
+      - baseNetwork
+  filebrowser:
+    image: hurlenko/filebrowser
+    user: "root:root"
+    ports:
+      - 443:8080
+    volumes:
+      - master_files:/data
+      - /CONFIG_DIR:/config
+    environment:
+      - FB_BASEURL=/filebrowser
+    restart: always
+volumes:
+  mongodb_data_container:
+  rsa: 
+    driver: local
+    driver_opts:
+      type: none
+      device: ./rsa
+      o: bind
+  master_files: 
+    driver: local
+    driver_opts:
+      type: none
+      device: ./files
+      o: bind
+
+networks:
+  baseNetwork:
