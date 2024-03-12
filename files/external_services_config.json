@@ -1,0 +1,66 @@
+{
+    "Delink": {
+        "credentials": {
+            "type": "basic",
+            "username": "tt_clm360",
+            "password_hash": "cmz.vKwLCXKalb2NgeCMAYw/6xzjAFa",
+            "password_salt": "$2a$12$.fAYgFx.xgiljblLDYbbDe"
+        }
+    },
+    "LoginQuery": {
+        "credentials": {
+            "type": "basic",
+            "username": "ivr700",
+            "password_hash": ".Kke1KugQEPupIjkzDGwTrbtow3uUGO",
+            "password_salt": "$2a$12$GQ0hk6SRuJmKY7FX19m9X."
+        }
+    },
+    "Push_SOAP": {
+        "credentials": {
+            "type": "basic",
+            "username": "em_ericsson",
+            "password_hash": "qQrQnKpA0.JoUzZbaFjKzC0POBSUZ.y",
+            "password_salt": "$2a$12$isJeNWmKeEzQc3PL0SrpNe"
+        }
+    },
+    "Push_JSON": {
+        "credentials": {
+            "type": "basic",
+            "username": "ccchat",
+            "password_hash": "9szyjdBUfv/3HyT/t.s0bneuvAUK4tC",
+            "password_salt": "$2a$12$5OjnV7dMuLztp73bHZ41x."
+        }
+    },
+    "validateToken": {
+        "credentials": {
+            "type": "basic",
+            "username": "test",
+            "password_hash": "n9/IgKE.mN2Mha7pMaxFbfBBAAVeK/6",
+            "password_salt": "$2b$12$T.RTzT51fMpmcGrtL6R1Hu"
+        }
+    },
+    "internal_token": {
+        "credentials": {
+            "type": "basic",
+            "username": "test",
+            "password_hash": "n9/IgKE.mN2Mha7pMaxFbfBBAAVeK/6",
+            "password_salt": "$2b$12$T.RTzT51fMpmcGrtL6R1Hu"
+        }
+    },
+    "activeOffers": {
+        "credentials": {
+            "type": "basic",
+            "username": "acfUser",
+            "password_hash": "hCINVj0HpCB/d2VgDVbOjcgwwBAcWKW",
+            "password_salt": "$2b$12$/RDFt0oqgqBYPyw7kVQiTu"
+        }
+    },
+    "adminPanel": {
+    "credentials": {
+      "type": "basic",
+      "username": "adminPanel",
+      "password_hash": "A5U78jISeQEq8wqGjPgAZFDYrzTtWwO",
+      "password_salt": "$2b$12$WmZfdArhOY9XRrVgMh6CaO"
+    }
+  }
+}

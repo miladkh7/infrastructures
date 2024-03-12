@@ -1,0 +1,31 @@
+{
+    "urn:ngmy:sms-template:authorization:token:new-login": {
+        "fa": "مشترک گرامی، شماره شما {phone_number} در تاریخ {datetime_now} به برنامه «ایرانسل‌من» اضافه شده است. درصورتی که این درخواست از سمت شما نبوده است، می توانید با ورود به برنامه «ایرانسل‌من» نسبت به حذف آن اقدام نمایید.",
+        "en": "Your number {phone_number} has been added to MyIrancell app at {datetime_now}. If you did not authorize this action, visit MyIrancell app and delete your number."
+    },
+    "urn:ngmy:sms-template:authorization:migrate": {
+        "fa": "ایرانسلی عزیز، شماره شما {phone_number} در تاریخ {datetime_now} به برنامه «ایرانسل‌من» اضافه شده است. درصورتی که این درخواست از سمت شما نبوده است، می توانید با ورود به برنامه «ایرانسل‌من» نسبت به حذف آن اقدام نمایید.",
+        "en": "Your number {phone_number} has been added to MyIrancell app at {datetime_now}. If you did not authorize this action, visit MyIrancell app and delete your number."
+    },
+    "urn:ngmy:sms-template:authorization:transfer": {
+        "fa": "ایرانسلی عزیز، شماره شما {phone_number} در تاریخ {datetime_now} به برنامه «ایرانسل‌من» انتقال داده شده است. درصورتی که این درخواست از سمت شما نبوده است، می توانید با ورود به برنامه «ایرانسل‌من» نسبت به حذف آن اقدام نمایید.",
+        "en": "Your number {phone_number} has been transferred to MyIrancell app at {datetime_now}. If you did not authorize this action, visit MyIrancell app and delete your number."
+    },
+    "urn:ngmy:sms-template:sim-option:terminate:cancel": {
+        "fa": "مشترک گرامی، درخواست سلب امتیاز شماره {phone_number} توسط شماره {profile_phone_number} تحت مالکیت شما، با موفقیت لغو شد.جهت استفاده بهتر از خدمات و بازگشت بسته های اینترنتی و ... تلفن همراه خود را یک بار در حال هواپیما (offline) قرار داده و بعد از یک دقیقه به حالت اولیه (online) بازگردانید.",
+        "en": "Dear subscriber, the service termination request for {phone_number} by the number {profile_phone_number} registered in your name, was successfully cancelled. To be able to better enjoy our services and retrieve various packages, please put your mobile phone in flight mode, and after a minute put it back online."
+    },
+    "urn:ngmy:sms-template:sim-option:terminate:request": {
+        "fa": "مشترک گرامی،درخواستی جهت سلب امتیاز شماره {phone_number}توسط شماره {subscriber_phone_number}ثبت شده و سیمکارت مذکور ظرف 24ساعت از مالکیت شما خارج میشود.برای لغو این درخواست میتوانید از طریق ایرانسل من/پرونده/اطلاعات حساب/مشاهده سیمکارتهای ایرانسل ثبت نام شده اقدام کنید.درصورت تمایل به حفظ این سیمکارت، پس از لغو درخواست سلب امتیاز، میتوانید به همراه مدارک شناسایی به یکی از مراکز خدمات ایرانسل مراجعه کنید و مالکیت خط خود را تغییر دهید. درغیر اینصورت سیمکارت به طور قطعی از مالکیت شما خارج میشود و امکان بازیابی آن وجود ندارد. دریافت ایرانسل من:#45*",
+        "en": "Dear subscriber, a SIM ownership termination request for {phone_number} has been submitted by {subscriber_phone_number}, and your ownership of the mentioned SIM will be terminated within 24 hours. You can cancel this request via MyIrancell/My Account/Account Info/View Registered MSISDN. If you wish to keep this SIM, after cancelling the request you can visit an Irancell service center having your ID card and change your SIM ownership. Otherwise your SIM card ownership will be permanently terminated and cannot be retrieved. Get MyIrancell via *45#"
+    },
+    "ngmy:sms-template:gift:refer_a_friend:notify": {
+        "fa": "دوست شما به شماره {phone_number} ، شما را به نصب و استفاده از سوپر اپلیکیشن ایرانسل من دعوت کرده است.\nبا نصب ایرانسل من و ورود به آن، ۵۰ گیگابایت اینترنت هدیه بگیرید!\nنسل جدید سوپر اپلیکیشن ایرانسل من:\nmy.irancell.ir/referral/{phone_number}",
+        "en": "Your friend with the number {phone_number} is inviting you to install and use MyIrancell super application.\nBy installing and logging in to it, you can enjoy a 50GB gift data package!\nMyIrancell New Generation super app:\nmy.irancell.ir/referral/{phone_number}"
+    },
+
+    "urn:ngmy:sms-template:sim-option:dordaneh:remove": {
+        "fa": "مشترک گرامی، سرویس اینترنت ایمن کودک برای شماره {dordaneh_msisdn} غیرفعال شد",
+        "en": "Internet Safety for Kids & Teens has been successfully deactivated for {dordaneh_msisdn}"
+    }
+}

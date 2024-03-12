@@ -1,0 +1,304 @@
+da_id,da_type,conversion_rate,unit,name,fa_title,en_title,customer_type,is_roaming,is_wow,is_gift,is_shared,display
+1,V,300.0,STRRIAL,PREDA1,مکالمه,On-net Voice (IRR),prepaid,0,0,0,0,1
+2,S,105.0,STRRIAL,PREDA2,پیامک عمومی- وفاداری- Dola,Bonus SMS (IRR),prepaid,0,1,1,0,1
+3,S,105.0,STRRIAL,PREDA3,پیامک فارسی,Farsi SMS (IRR),prepaid,0,0,0,0,1
+4,,1.0,STRRIAL,PREDA4,پیام چندرسانه ای,MMS (IRR),prepaid,0,0,0,0,1
+5,M,1.0,STRRIAL,PREDA5,اعتبار هدیه شگفت انگیز,WOW Gift Amount (IRR),prepaid,0,1,0,0,1
+6,V,400.0,STRRIAL,PREDA6,مکالمه هدیه جمعه- وفاداری,MVPN Voice (IRR),prepaid,0,1,0,0,1
+7,,1.0,STRRIAL,PREDA7,عمومی ایرانسلی,General credit (not used),prepaid,0,0,1,0,1
+8,V,669.0,STRRIAL,PREDA8,عمومی,Bonus on-net voice (IRR),prepaid,0,0,0,0,1
+9,WOW,1.0,STRRIAL,PREDA9,اعتبار شگفت انگیز,WOW Amount (IRR),prepaid,0,1,0,0,1
+10,D,1024.0,MB,PREDA10,اینترنت,Internet,prepaid,0,0,0,0,1
+11,D,102.4,MB,PREDA11,"اینترنت هدیه ","Bonus internet ",prepaid,0,0,1,0,1
+12,,1.0,STRRIAL,PREDA12,وفاداری- عمومی,Bonus credit (IRR),prepaid,0,0,1,0,1
+13,S,105.0,STRRIAL,PREDA13,پیامک- وفاداری,Bonus SMS (IRR),prepaid,0,0,1,0,1
+14,V,1.0,STRRIAL,PREDA14,خدمات اعلام دسترسی,Voice (IRR),prepaid,0,0,0,0,1
+15,,1.0,STRRIAL,PREDA15,چارسو,App store (IRR),prepaid,0,0,0,0,1
+16,,1.0,STRRIAL,PREDA16,ویترین,Vitrin (IRR),prepaid,0,0,0,0,1
+17,S,105.0,STRRIAL,PREDA17,پوشه ایرانسل,RCS SMS (IRR),prepaid,0,0,0,0,1
+18,D,1024.0,MB,PREDA18,اینترنت بلند مدت,"Long-term internet ",prepaid,0,0,0,0,1
+19,,1.0,STRRIAL,PREDA19,مکالمه- ساعات غیر اوج مصرف,RCS MMS (IRR),prepaid,0,0,0,0,1
+20,D,1024.0,MB,PREDA20,"اینترنت ","Internet ",prepaid,0,0,0,0,1
+21,D,1048576.0,MB,PREDA21,اینترنت وفاداری,Loyalty Internet,prepaid,0,0,1,0,1
+22,V,300.0,STRRIAL,PREDA22,30دقیقه مکالمه رایگان،150ت,"Pay150T,Get30Min Free Call",prepaid,0,0,1,0,1
+23,S,199.0,STRSMS,PREDA23,پیامک رایگان درون شبکه,Gift On-net SMS,prepaid,0,0,1,0,1
+24,V,669.0,STRRIAL,PREDA24,مکالمه وفاداری,On-net Voice Bonus (IRR),prepaid,0,0,1,0,1
+25,V,1.0,STRRIAL,PREDA25,تماس داخل شبکه - بسته ترکيبي من,On-net Voice (Dynamic Combo Bolton) (IRR),prepaid,0,0,0,0,1
+26,,1.0,STRRIAL,PREDA26,,,prepaid,0,0,1,0,1
+27,V,669.0,STRRIAL,PREDA27,مکالمه بلند مدت وفاداری,On-net Voice Bonus (IRR),prepaid,0,0,1,0,1
+28,D,102.4,MB,PREDA28,اینترنت هدیه (2 صبح تا 10 شب),Gift Data (2AM \u2013 10PM),prepaid,0,0,0,0,1
+29,D,204.8,MB,SharedAccount,,,prepaid,0,0,0,1,1
+30,D,1024.0,MB,PREDA30,کارت شارژ اینترنت,Internet Voucher,prepaid,0,0,0,0,1
+31,S,105.0,STRRIAL,PREDA31,پیامک  وفاداری,Farsi SMS Bonus (IRR),prepaid,0,0,1,0,1
+32,V,899.0,STRRIAL,PREDA32,مکالمه هدیه درون شبکه,Free On-Net call,prepaid,0,0,1,0,1
+33,D,102.4,MB,PREDA33,اینترنت هدیه,Gift Data (2AM \u2013 10PM),prepaid,0,0,1,0,1
+34,,1.0,STRRIAL,PREDA34,,Credit Bonus (IRR),prepaid,0,0,0,0,1
+35,,1.0,STRRIAL,PREDA35,,,prepaid,0,0,0,0,1
+36,,1.0,STRRIAL,PREDA36,,,prepaid,0,0,0,0,1
+37,,1.0,STRRIAL,PREDA37,,,prepaid,0,0,0,0,1
+38,,1.0,STRRIAL,PREDA38,اینترنت بلند مدت,,prepaid,0,0,0,0,1
+39,D,1024.0,MB,PREDA39,اینترنت9شب-9صبح,Internet 9PM-9AM,prepaid,0,0,0,0,1
+40,,1.0,STRRIAL,PREDA40,,,prepaid,0,0,0,0,1
+41,,1.0,STRRIAL,PREDA41,,,prepaid,0,0,0,0,1
+42,,1.0,STRRIAL,PREDA42,,,prepaid,0,0,0,0,1
+43,,1.0,STRRIAL,PREDA43,,,prepaid,0,0,0,0,1
+44,,1.0,STRRIAL,PREDA44,,,prepaid,0,0,0,0,1
+45,,1.0,STRRIAL,PREDA45,,,prepaid,0,0,0,0,1
+46,,1.0,STRRIAL,PREDA46,,,prepaid,0,0,0,0,1
+47,,1.0,STRRIAL,PREDA47,,,prepaid,0,0,0,0,1
+48,,1.0,STRRIAL,PREDA48,,,prepaid,0,0,0,0,1
+49,,1.0,STRRIAL,PREDA49,,,prepaid,0,0,0,0,1
+50,,1.0,STRRIAL,PREDA50,,,prepaid,0,0,0,0,1
+51,,1.0,STRRIAL,PREDA51,,,prepaid,0,0,0,0,1
+52,,1048576.0,STRRIAL,PREDA52,,,prepaid,0,0,0,0,1
+53,,1.0,STRRIAL,PREDA53,,,prepaid,0,0,0,0,1
+54,,1.0,STRRIAL,PREDA54,,,prepaid,0,0,0,0,1
+55,,1.0,STRRIAL,PREDA55,,,prepaid,0,0,0,0,1
+56,,1.0,STRRIAL,PREDA56,,,prepaid,0,0,0,0,1
+57,,1.0,STRRIAL,PREDA57,,,prepaid,0,0,0,0,1
+58,,1.0,STRRIAL,PREDA58,,,prepaid,0,0,0,0,1
+59,,1.0,STRRIAL,PREDA59,,,prepaid,0,0,0,0,1
+60,,1.0,STRRIAL,PREDA60,,,prepaid,0,0,0,0,1
+62,,1.0,STRRIAL,PREDA62,,,prepaid,0,0,0,0,1
+63,,1.0,STRRIAL,PREDA63,,,prepaid,0,0,0,0,1
+64,,1.0,STRRIAL,PREDA64,,,prepaid,0,0,0,0,1
+65,,1.0,STRRIAL,PREDA65,,,prepaid,0,0,0,0,1
+66,,1.0,STRRIAL,PREDA66,,,prepaid,0,0,0,0,1
+67,,1.0,STRRIAL,PREDA67,,,prepaid,0,0,0,0,1
+68,,1.0,STRRIAL,PREDA68,,,prepaid,0,0,0,0,1
+69,,1.0,STRRIAL,PREDA69,,,prepaid,0,0,0,0,1
+70,,1.0,STRRIAL,PREDA70,,,prepaid,0,0,0,0,1
+71,,1.0,STRRIAL,PREDA71,,,prepaid,0,0,0,0,1
+72,,1.0,STRRIAL,PREDA72,,,prepaid,0,0,0,0,1
+73,,1.0,STRRIAL,PREDA73,,,prepaid,0,0,0,0,1
+74,,1.0,STRRIAL,PREDA74,,,prepaid,0,0,0,0,1
+75,,1.0,STRRIAL,PREDA75,,,prepaid,0,0,0,0,1
+76,,1.0,STRRIAL,PREDA76,,,prepaid,0,0,0,0,1
+77,,1.0,STRRIAL,PREDA77,,,prepaid,0,0,0,0,1
+78,,1.0,STRRIAL,PREDA78,,,prepaid,0,0,0,0,1
+79,,1.0,STRRIAL,PREDA79,,,prepaid,0,0,0,0,1
+80,V,499.0,STRMINS,Voice1Month,,,prepaid,0,0,0,1,1
+81,V,499.0,STRMINS,Voice3Month,,,prepaid,0,0,0,1,1
+82,V,499.0,STRMINS,Voice6Month,,,prepaid,0,0,0,1,1
+83,V,499.0,STRMINS,Voice12Month,,,prepaid,0,0,0,1,1
+84,S,160.0,STRSMS,SMS1Month,,,prepaid,0,0,0,1,1
+85,S,160.0,STRSMS,SMS3Month,,,prepaid,0,0,0,1,1
+86,S,160.0,STRSMS,SMS6Month,,,prepaid,0,0,0,1,1
+87,S,160.0,STRSMS,SMS12Month,,,prepaid,0,0,0,1,1
+92,,1.0,STRRIAL,PREDA92,,,prepaid,0,0,0,0,1
+93,SF,1.0,STRRIAL,STRSHAREDFUND,اعتبار ریالی,Fund (IRR),prepaid,0,0,0,1,1
+94,,1.0,STRRIAL,PREDA94,,,prepaid,0,0,0,0,1
+95,,1.0,STRRIAL,PREDA95,,,prepaid,0,0,0,0,1
+96,,1.0,STRRIAL,PREDA96,,,prepaid,0,0,0,0,1
+97,,1.0,STRRIAL,PREDA97,,,prepaid,0,0,0,0,1
+98,,1.0,STRRIAL,PREDA98,,,prepaid,0,0,0,0,1
+99,,1.0,STRRIAL,PREDA99,,,prepaid,0,0,0,0,1
+100,,1.0,STRRIAL,PREDA100,,,prepaid,0,0,0,0,1
+101,D,1024.0,MB,PREDA101,دیتا دریافت شده,Me2U Internet,prepaid,0,0,0,0,1
+102,D,1024.0,MB,PREDA102,رومینگ,Roaming Bolton,prepaid,1,0,0,0,1
+103,S,105.0,STRSMS,PREDA103,پیامک_امتیاز من,Point based SMS,prepaid,0,0,0,0,1
+104,V,669.0,STRMINS,PREDA104,مکالمه_امتیاز من,Point based voice,prepaid,0,0,0,0,1
+105,,1.0,STRRIAL,PREDA105,,,prepaid,0,0,0,0,1
+106,D,102.4,MB,PREDA106,اینترنت هدیه (2 صبح تا 10 شب),Gift Data (2AM \u2013 10PM),prepaid,0,0,0,0,1
+107,,1.0,STRRIAL,PREDA107,,,prepaid,0,0,0,0,1
+108,D,1024.0,MB,PREDA108,بسته چند کاربره,Shared bonus data,prepaid,0,0,0,0,1
+109,D,204.8,MB,SharedAccount,,,prepaid,0,0,0,1,1
+110,D,1024.0,MB,PREDA110,اینترنت اولویت دار,Data 12AM-12PM,prepaid,0,0,0,0,1
+111,S,1.0,No,STRUNLIMITED,نامحدود,unlimited,prepaid,0,0,0,1,1
+112,V,60.0,Mins,STRUNLIMITED,نامحدود,unlimited,prepaid,0,0,0,1,1
+113,SF,1.0,STRRIAL,STRUNLIMITED,نامحدود,unlimited,prepaid,0,0,0,1,1
+114,,1.0,STRRIAL,PREDA114,,,prepaid,0,0,0,0,1
+115,,1.0,STRRIAL,PREDA115,,,prepaid,0,0,0,0,1
+116,V,1.0,STRRIAL,PREDA116,مکالمه بین‌المللی,International voice,prepaid,0,0,0,0,1
+117,,1.0,STRRIAL,PREDA117,,,prepaid,0,0,0,0,1
+118,,1.0,STRRIAL,PREDA118,,,prepaid,0,0,0,0,1
+119,,1.0,STRRIAL,PREDA119,,,prepaid,0,0,0,0,1
+120,D,204.8,MB,PREDA120,اینترنت هدیه,Gift Internet,prepaid,0,0,0,0,1
+121,D,204.8,MB,SharedAccount,,,prepaid,0,0,0,1,1
+122,D,204.8,MB,SharedAccount,,,prepaid,0,0,0,1,1
+123,V,300.0,STRMINS,Voice1Month,,,prepaid,0,0,0,1,1
+124,V,300.0,STRMINS,Voice3Month,,,prepaid,0,0,0,1,1
+125,V,300.0,STRMINS,Voice6Month,,,prepaid,0,0,0,1,1
+126,V,300.0,STRMINS,Voice12Month,,,prepaid,0,0,0,1,1
+127,S,160.0,STRSMS,SMS1Month,,,prepaid,0,0,0,1,1
+128,S,160.0,STRSMS,SMS3Month,,,prepaid,0,0,0,1,1
+129,S,160.0,STRSMS,SMS6Month,,,prepaid,0,0,0,1,1
+130,S,160.0,STRSMS,SMS12Month,,,prepaid,0,0,0,1,1
+135,SF,1.0,STRRIAL,STRSHAREDFUND,اعتبار ریالی,Fund (IRR),prepaid,0,0,0,1,1
+136,D,204.8,MB,DATA1MONTH,اینترنت ماهانه,Monthly Internet,prepaid,0,0,0,1,1
+137,D,204.8,MB,DATA3MONTH,اینترنت سه ماهه,3-Month Internet,prepaid,0,0,0,1,1
+138,D,204.8,MB,DATA6MONTH,اینترنت شش ماهه,6-Month Internet,prepaid,0,0,0,1,1
+139,D,204.8,MB,DATA12MONTH,اینترنت سالانه,Yearly Internet,prepaid,0,0,0,1,1
+140,D,204.8,MB,PREDA140," بسته یکماهه اینترنت ثابت سازمانی"," Data 1 Month TDD",prepaid,0,0,0,1,1
+141,D,204.8,MB,PREDA141," بسته سه ماهه اینترنت ثابت سازمانی"," Data 3 Month TDD",prepaid,0,0,0,1,1
+142,D,204.8,MB,PREDA142," بسته شش ماهه اینترنت ثابت سازمانی"," Data 6 Month TDD",prepaid,0,0,0,1,1
+143,D,204.8,MB,PREDA143,بسته سالانه اینترنت ثابت سازمانی," Data 12 Month TDD",prepaid,0,0,0,1,1
+170,D,102.4,MB,PREDA170,اینترنت هدیه,Bonus Data,prepaid,0,0,1,0,1
+197,WOW,1.0,STRRIAL,PREDA9,اعتبار شگفت انگیز,WOW Amount (IRR),prepaid,0,1,0,0,1
+200,WOW,1.0,STRRIAL,PREDA200,شگفت‌انگیز دیجیتال,Digital WOW,prepaid,0,1,0,0,1
+198,M,1.0,STRRIAL,PREDA5,اعتبار هدیه شگفت انگیز,WOW Gift Amount (IRR),prepaid,0,0,0,0,1
+208,WOW,1.0,STRRIAL,PREDA208,اعتبار خرید,Purchase Credit,prepaid,0,1,0,0,1
+261,V,1.0,STRMINS,Mins,,,prepaid,0,0,0,0,1
+262,S,1.0,STRSMS,STRSMS,,,prepaid,0,0,0,0,1
+263,D,1.0,MB,Data,,,prepaid,0,0,0,0,1
+264,D,1.0,MB,Data,,,prepaid,0,0,0,0,1
+265,V,1.0,STRMINS,Voice,,,prepaid,0,0,0,0,1
+1001,V,300.0,STRRIAL,PREDA1001,مکالمه,Voice,prepaid,0,0,0,0,1
+1002,S,105.0,STRRIAL,PREDA1002,پیامک فارسی,Farsi SMS,prepaid,0,0,0,0,1
+1003,S,105.0,STRRIAL,PREDA1003,پیامک,General onnet SMS,prepaid,0,0,0,0,1
+1004,D,1048576.0,MB,PREDA1004,"اینترنت  ",Data,prepaid,0,0,0,0,1
+1005,V,669.0,STRRIAL,PREDA1005,"مکالمه ترکیبی من ",Dynamic combo voice,prepaid,0,0,0,0,1
+1006,D,1048576.0,MB,PREDA1006,"اینترنت رومینگ ",Roaming Data,prepaid,1,0,0,0,1
+1007,D,1048576.0,MB,PREDA1007,اینترنت سبک زندگی,Lifestyle Internet,prepaid,0,0,0,0,1
+1008,D,1048576.0,MB,PREDA1008,اینترنت شبانه,Internet Off-Peak,prepaid,0,0,0,0,1
+1009,V,929.0,STRRIAL,PREDA1009,"مکالمه خارج از شبکه ",Off-Net Voice,prepaid,0,0,0,0,1
+1010,D,1048576.0,MB,PREDA1010,اینترنت مودم کارکنان,Staff TDD Internet,prepaid,0,0,0,0,1
+1011,D,1048576.0,MB,PREDA1011,اینترنت هدیه شبانه,Gift Internet Off-peak,prepaid,0,0,1,0,1
+1012,D,1048576.0,MB,PREDA1012,اینترنت شبانه,Internet Off-Peak,prepaid,0,0,0,0,1
+1013,DVS,2304.0,MB,PREDA1013,,"       ",prepaid,0,0,0,0,1
+1015,DVS,768.0,MB,PREDA1015,,"       ",prepaid,0,0,0,0,1
+1016,V,300.0,STRRIAL,PREDA1016,مکالمه رومینگ,Roaming Voice,prepaid,1,0,0,0,1
+1017,S,160.0,STRRIAL,PREDA1017,پیامک رومینگ,Roaming SMS,prepaid,1,0,0,0,1
+1018,D,204.8,MB,PREDA1018,اینترنت,Internet,prepaid,0,0,0,0,1
+1019,D,204.8,MB,PREDA1019,اینترنت,Internet,prepaid,0,0,0,0,1
+1020,D,102.4,MB,PREDA1020,بسته اینترنت هدیه,Gift Package,prepaid,0,0,1,0,1
+1021,V,300.0,STRMINS,PREDA1021,مکالمه هدیه داخل شبکه,Voice onnet gift,prepaid,0,0,1,0,1
+1022,S,105.0,STRMINS,PREDA1021,مکالمه هدیه داخل شبکه,Voice onnet gift,prepaid,0,0,1,0,1
+1023,D,204.8,MB,PREDA1023,اینترنت هدیه,Gift Internet,prepaid,0,0,1,0,1
+1024,D,102.4,STRMINS,PREDA1021,مکالمه هدیه داخل شبکه,Voice onnet gift,prepaid,0,0,1,0,1
+1025,V,300.0,STRRIAL,PREDA1025,مکالمه ایرانسلی هدیه,Gift On-net Voice,prepaid,0,0,1,0,1
+1026,V,300.0,STRRIAL,PREDA1026,مکالمه ایرانسلی,On-net Voice,prepaid,0,0,0,0,1
+1027,V,300.0,STRRIAL,PREDA1027,مکالمه ایرانسلی,On-net Voice,prepaid,0,0,0,0,1
+1028,D,204.8,MB,PREDA1028,اینترنت,Internet,prepaid,0,0,0,0,1
+1029,D,68.26,MB,PREDA1029,بسته اینترنت مختص گپ,Internet package for GAP,prepaid,0,0,0,0,1
+1030,D,102.4,MB,PREDA1030,بسته اینترنت مختص آپارات,Internet package for Aparat,prepaid,0,0,0,0,1
+1031,D,204.8,MB,PREDA1031,اینترنت بین الملل,International Internet,prepaid,0,0,0,0,1
+1032,D,204.8,MB,PREDA1032,اینترنت داخلی,Local Internet,prepaid,0,0,0,0,1
+1033,D,204.8,MB," PREDA1033",,,prepaid,0,0,0,0,1
+1035,D,51.2,MB,PREDA1035,اینترنت هدیه,Gift Internet,prepaid,0,0,1,0,1
+1036,D,51.2,MB,PREDA1036,اینترنت – وفاداری کیف پول دیجیتال,Loyalty - Data DG Wallet,prepaid,0,0,1,0,1
+1037,V,300.0,STRMINS,PREDA1037,مکالمه خارج از شبکه,Voice off-net package,prepaid,0,0,0,0,1
+1051,D,1048576.0,MB,PREDA1051,بسته اينترنتي ويژه,Special Internet Packs,prepaid,0,0,0,0,1
+1052,D,1048576.0,MB,PREDA1052,اینترنت وای فای,WiFi Internet,prepaid,0,0,0,0,1
+1053,D,1048576.0,MB,PREDA1053,"اینترنت هدیه وای فای ",Gift WiFi Internet,prepaid,0,0,0,0,1
+408,D,204.8,MB,DATA1MONTH,اینترنت ماهانه,Monthly Internet,prepaid,0,0,0,1,1
+409,D,204.8,MB,DATA3MONTH,اینترنت سه ماهه,3-Month Internet,prepaid,0,0,0,1,1
+410,D,204.8,MB,DATA6MONTH,اینترنت شش ماهه,6-Month Internet,prepaid,0,0,0,1,1
+411,D,204.8,MB,DATA12MONTH,اینترنت سالانه,Yearly Internet,prepaid,0,0,0,1,1
+412,D,204.8,MB,DATA1MONTH,اینترنت ماهانه,Monthly Internet,prepaid,0,0,0,1,1
+413,D,204.8,MB,DATA3MONTH,اینترنت سه ماهه,3-Month Internet,prepaid,0,0,0,1,1
+414,D,204.8,MB,DATA6MONTH,اینترنت شش ماهه,6-Month Internet,prepaid,0,0,0,1,1
+415,D,204.8,MB,DATA12MONTH,اینترنت سالانه,Yearly Internet,prepaid,0,0,0,1,1
+150,D,204.8,MB,STRUNLIMITED,نامحدود,unlimited,prepaid,0,0,0,1,1
+44,V,499.0,STRRIAL,POSTDA44,"مکالمه ","Voice ",postpaid,0,0,0,0,1
+45,S,160.0,STRRIAL,POSTDA45,پیامک,SMS,postpaid,0,0,0,0,1
+46,V,499.0,STRRIAL,POSTDA46,مکالمه وفاداری,Loyalty Voice,postpaid,0,0,1,0,1
+47,D,1048576.0,STRRIAL,POSTDA47,اینترنت,"Internet ",postpaid,0,0,0,0,1
+48,D,1048576.0,STRRIAL,POSTDA48,پیامک هدیه ایرانسلی,Gift On-net SMS,postpaid,0,0,1,0,1
+49,V,1.0,STRRIAL,POSTDA49,وایمکس,Wimax,postpaid,0,0,0,0,1
+50,V,499.0,STRRIAL,POSTDA50,مکالمه,Voice,postpaid,0,0,0,0,1
+51,S,89.0,STRRIAL,POSTDA51,پیامک,SMS,postpaid,0,0,0,0,1
+52,D,1048576.0,STRRIAL,POSTDA52,اینترنت وفاداری,"Loyalty Internet ",postpaid,0,0,1,0,1
+53,D,1048576.0,STRRIAL,POSTDA53,بسته اینترنت شرکت,Staff Internet,postpaid,0,0,0,0,1
+54,D,1048576.0,MB,POSTDA54,اینترنت هدیه شبانه,Gift Internet Off-peak,postpaid,0,0,1,0,1
+55,V,1.0,STRRIAL,POSTDA55,وایمکس,Wimax,postpaid,0,0,0,0,1
+56,V,499.0,STRRIAL,POSTDA56,مکالمه,Voice,postpaid,0,0,0,0,1
+57,S,89.0,STRRIAL,POSTDA57,پیامک,SMS,postpaid,0,0,0,0,1
+58,D,1048576.0,STRRIAL,POSTDA58,اینترنت سبک زندگی,"Lifestyle Internet ",postpaid,0,0,0,0,1
+59,D,1048576.0,STRRIAL,POSTDA59,"اینترنت ",Internet,postpaid,0,0,0,0,1
+60,V,499.0,STRRIAL,POSTDA60,مکالمه خارج شبکه,Voice Off-net,postpaid,0,0,0,0,1
+61,D,89.0,MB,"STRDATA
+",,,postpaid,0,0,0,0,1
+62,D,1048576.0,STRRIAL,POSTDA62,اینترنت شبانه,Internet Off-peak,postpaid,0,0,0,0,1
+63,D,1048576.0,STRRIAL,POSTDA63,اینترنت شبانه,Internet Off-peak,postpaid,0,0,0,0,1
+64,D,1048576.0,STRRIAL,POSTDA64,اینترنت شبانه,Internet 0-12Noon or 2AM-6AM or 6AM-12PM (MB/GB),postpaid,0,0,0,0,1
+67,D,1048576.0,STRRIAL,POSTDA67,اینترنت رومینگ,"Roaming Internet ",postpaid,1,0,0,0,1
+68,V,499.0,STRRIAL,POSTDA68,"مکالمه رومینگ ",Roaming Voice,postpaid,1,0,0,0,1
+69,S,160.0,STRRIAL,POSTDA69,پیامک انگلیسی ایرانسلی,Roaming SMS,postpaid,1,0,0,0,1
+70,WOW,1.0,STRRIAL,POSTDA70,شگفت‌انگیز دیجیتال,Digital WOW,postpaid,0,1,0,0,1
+71,S,89.0,STRSMS,POSTDA71,پیامک فارسی هدیه,Farsi SMS Reward,postpaid,0,0,1,0,1
+72,V,333.0,STRMINS,POSTDA72,مکالمه هدیه درون شبکه,On-net Voice Reward,postpaid,0,0,1,0,1
+73,D,102.4,MB,POSTDA73,اینترنت هدیه,Gift Data (2AM \u2013 10PM),postpaid,0,0,1,0,1
+74,V,499.0,STRRIAL,POSTDA74,اعتبار هدیه,Credit Reward,postpaid,0,0,1,0,1
+75,S,89.0,STRSMS,POSTDA75,پیامک فارسی هدیه,Farsi SMS Bonus,postpaid,0,0,1,0,1
+76,V,333.0,STRMINS,POSTDA76,مکالمه هدیه درون شبکه,Voice Bonus,postpaid,0,0,1,0,1
+77,D,1048576.0,MB,POSTDA77,اینترنت هدیه,Internet Bonus,postpaid,0,0,1,0,1
+78,V,499.0,STRRIAL,POSTDA78,اعتبار هدیه,Credit Bonus,postpaid,0,0,1,0,1
+79,D,102.4,MB,POSTDA79,اینترنت هدیه,Internet Reward,postpaid,0,0,1,0,1
+80,V,499.0,STRMINS,Voice1Month,,,postpaid,0,0,0,1,1
+81,V,499.0,STRMINS,Voice3Month,,,postpaid,0,0,0,1,1
+82,V,499.0,STRMINS,Voice6Month,,,postpaid,0,0,0,1,1
+83,V,499.0,STRMINS,Voice12Month,,,postpaid,0,0,0,1,1
+84,S,160.0,STRSMS,SMS1Month,,,postpaid,0,0,0,1,1
+85,S,160.0,STRSMS,SMS3Month,,,postpaid,0,0,0,1,1
+86,S,160.0,STRSMS,SMS6Month,,,postpaid,0,0,0,1,1
+87,S,160.0,STRSMS,SMS12Month,,,postpaid,0,0,0,1,1
+92,SF,1.0,STRRIAL,STRSHAREDFUND,اعتبار ریالی,Fund (IRR),postpaid,0,0,0,1,1
+93,SF,1.0,STRRIAL,STRSHAREDFUND,اعتبار ریالی,Fund (IRR),postpaid,0,0,0,1,1
+94,DVS,2304.0,MB,MPCBData,,,postpaid,0,0,0,0,1
+96,DVS,2304.0,MB,MPCBData,,,postpaid,0,0,0,0,1
+98,D,1048576.0,STRRIAL,POSTDA98,اینترنت وای فای,WiFi Internet,postpaid,0,0,0,0,1
+99,D,1048576.0,STRRIAL,POSTDA99,اینترنت هدیه وای فای,Gift WiFi Internet,postpaid,0,0,0,0,1
+171,D,102.4,MB,POSTDA79,اینترنت هدیه,Internet Reward,postpaid,0,0,1,0,1
+172,D,102.4,MB,POSTDA79,اینترنت هدیه,Internet Reward,postpaid,0,0,1,0,1
+261,V,1.0,STRMINS,Mins,,,postpaid,0,0,0,0,1
+262,S,1.0,STRSMS,STRSMS,,,postpaid,0,0,0,0,1
+263,D,1.0,MB,Data,,,postpaid,0,0,0,0,1
+264,D,1.0,MB,Data,,,postpaid,0,0,0,0,1
+265,V,1.0,STRMINS,Voice,,,postpaid,0,0,0,0,1
+401,D,204.8,MB,POSTDA401,اینترنت,Internet,postpaid,0,0,0,0,1
+402,D,204.8,MB,POSTDA402,اینترنت,Internet,postpaid,0,0,0,0,1
+403,V,499.0,STRMINS,POSTDA403,مکالمه هدیه داخل شبکه,Voice onnet gift,postpaid,0,0,1,0,1
+404,S,89.0,STRSMS,POSTDA404,پیامک رایگان درون شبکه,,postpaid,0,0,1,0,1
+405,D,204.8,MB,POSTDA405,اینترنت هدیه,Gift Internet,postpaid,0,0,1,0,1
+406,D,102.4,MB,POSTDA402,اینترنت,Internet,postpaid,0,0,0,0,1
+407,D,102.4,MB,POSTDA407,بسته اینترنت هدیه,Gift Package,postpaid,0,0,1,0,1
+408,D,204.8,MB,DATA1MONTH,اینترنت ماهانه,Monthly Internet,postpaid,0,0,0,1,1
+409,D,204.8,MB,DATA3MONTH,اینترنت سه ماهه,3-Month Internet,postpaid,0,0,0,1,1
+410,D,204.8,MB,DATA6MONTH,اینترنت شش ماهه,6-Month Internet,postpaid,0,0,0,1,1
+411,D,204.8,MB,DATA12MONTH,اینترنت سالانه,Yearly Internet,postpaid,0,0,0,1,1
+412,D,204.8,MB,DATA1MONTH,اینترنت ماهانه,Monthly Internet,postpaid,0,0,0,1,1
+413,D,204.8,MB,DATA3MONTH,اینترنت سه ماهه,3-Month Internet,postpaid,0,0,0,1,1
+414,D,204.8,MB,DATA6MONTH,اینترنت شش ماهه,6-Month Internet,postpaid,0,0,0,1,1
+415,D,204.8,MB,DATA12MONTH,اینترنت سالانه,Yearly Internet,postpaid,0,0,0,1,1
+417,V,499.0,STRRIAL,POSTDA417,مکالمه ایرانسلی هدیه,Gift On-net Voice,postpaid,0,0,1,0,1
+418,V,499.0,STRRIAL,POSTDA418,مکالمه ایرانسلی,On-net Voice,postpaid,0,0,0,0,1
+419,V,499.0,STRRIAL,POSTDA419,مکالمه ایرانسلی,On-net Voice,postpaid,0,0,0,0,1
+420,D,204.8,MB,POSTDA420,اینترنت,Internet,postpaid,0,0,0,0,1
+421,D,68.26,MB,POSTDA421,بسته اینترنت مختص گپ,Internet package for GAP,postpaid,0,0,0,0,1
+422,D,102.4,MB,POSTDA422,بسته اینترنت مختص آپارات,Internet package for Aparat,postpaid,0,0,0,0,1
+424,D,204.8,MB,POSTDA424,اینترنت بین الملل,International Internet,postpaid,0,0,0,0,1
+425,D,204.8,MB,POSTDA425,اینترنت داخلی,Local Internet,postpaid,0,0,0,0,1
+426,D,204.8,MB,PREDA1033,,,postpaid,0,0,0,0,1
+428,D,51.2,MB,POSTDA428,اینترنت هدیه,Gift Internet,postpaid,0,0,1,0,1
+429,D,51.2,MB,POSTDA429,اینترنت – وفاداری کیف پول دیجیتال,Loyalty - Data DG Wallet,postpaid,0,0,1,0,1
+432,V,499.0,STRMINS,POSTDA432,مکالمه خارج از شبکه,Voice off-net package,postpaid,0,0,0,0,1
+29,D,204.8,MB,SharedAccount,,,postpaid,0,0,0,1,1
+109,D,204.8,MB,SharedAccount,,,postpaid,0,0,0,1,1
+121,D,204.8,MB,SharedAccount,,,postpaid,0,0,0,1,1
+122,D,204.8,MB,SharedAccount,,,postpaid,0,0,0,1,1
+123,V,300.0,STRMINS,Voice1Month,,,postpaid,0,0,0,1,1
+124,V,300.0,STRMINS,Voice3Month,,,postpaid,0,0,0,1,1
+125,V,300.0,STRMINS,Voice6Month,,,postpaid,0,0,0,1,1
+126,V,300.0,STRMINS,Voice12Month,,,postpaid,0,0,0,1,1
+127,S,160.0,STRSMS,SMS1Month,,,postpaid,0,0,0,1,1
+128,S,160.0,STRSMS,SMS3Month,,,postpaid,0,0,0,1,1
+129,S,160.0,STRSMS,SMS6Month,,,postpaid,0,0,0,1,1
+130,S,160.0,STRSMS,SMS12Month,,,postpaid,0,0,0,1,1
+135,SF,1.0,STRRIAL,STRSHAREDFUND,اعتبار ریالی,Fund (IRR),postpaid,0,0,0,1,1
+136,D,204.8,MB,DATA1MONTH,اینترنت ماهانه,Monthly Internet,postpaid,0,0,0,1,1
+137,D,204.8,MB,DATA3MONTH,اینترنت سه ماهه,3-Month Internet,postpaid,0,0,0,1,1
+138,D,204.8,MB,DATA6MONTH,اینترنت شش ماهه,6-Month Internet,postpaid,0,0,0,1,1
+139,D,204.8,MB,DATA12MONTH,اینترنت سالانه,Yearly Internet,postpaid,0,0,0,1,1
+140,D,204.8,MB,PREDA140," بسته یکماهه اینترنت ثابت سازمانی"," Data 1 Month TDD",postpaid,0,0,0,1,1
+141,D,204.8,MB,PREDA141," بسته سه ماهه اینترنت ثابت سازمانی"," Data 3 Month TDD",postpaid,0,0,0,1,1
+142,D,204.8,MB,PREDA142," بسته شش ماهه اینترنت ثابت سازمانی"," Data 6 Month TDD",postpaid,0,0,0,1,1
+143,D,204.8,MB,PREDA143,بسته سالانه اینترنت ثابت سازمانی," Data 12 Month TDD",postpaid,0,0,0,1,1
+150,D,204.8,MB,STRUNLIMITED,اینترنت,Internet,postpaid,0,0,0,1,1
+111,S,1.0,No,STRUNLIMITED,پیامک,SMS,postpaid,0,0,0,1,1
+112,V,60.0,Mins,STRUNLIMITED,مکالمه,Voice,postpaid,0,0,0,1,1
+113,SF,1.0,STRRIAL,STRUNLIMITED,اعتبار ریالی,Fund (IRR),postpaid,0,0,0,1,1
+150,D,204.8,MB,STRUNLIMITED,اینترنت,Internet,prepaid,0,0,0,1,1
+111,S,1.0,No,STRUNLIMITED,پیامک,SMS,prepaid,0,0,0,1,1
+112,V,60.0,Mins,STRUNLIMITED,مکالمه,Voice,prepaid,0,0,0,1,1
+113,SF,1.0,STRRIAL,STRUNLIMITED,اعتبار ریالی,Fund (IRR),prepaid,0,0,0,1,1

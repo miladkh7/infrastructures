@@ -1,0 +1,98 @@
+{
+    "bill_report": {
+        "schedule": {
+            "hour": "2",
+            "minute": "0",
+            "day_of_week": "*"
+        },
+        "args": ""
+    },
+    "chunk_generator.trigger": {
+        "schedule": {
+            "hour": "*/1",
+            "minute": "15",
+            "day_of_week": "*"
+        },
+        "args": ""
+    },
+    "chunk_generator.aggregate": {
+        "schedule": {
+            "hour": "3",
+            "minute": "0",
+            "day_of_week": "*"
+        },
+        "args": ""
+    },
+     "login_info_report_chunk": {
+        "schedule": {
+            "hour": "00",
+            "minute": "10",
+            "day_of_week": "*"
+        },
+        "args": ""
+    },
+    "daily_report": {
+        "schedule": {
+            "hour": "3",
+            "minute": "0",
+            "day_of_week": "*"
+        },
+        "args": ""
+    },
+    "daily_report.aggregate": {
+        "schedule": {
+            "hour": "3",
+            "minute": "30",
+            "day_of_week": "*"
+        },
+        "args": ""
+    },
+    "feature_tracking_report": {
+        "schedule": {
+            "hour": "3",
+            "minute": "0",
+            "day_of_week": "*"
+        },
+        "args": ""
+    },
+    "feature_tracking_report.aggregate": {
+        "schedule": {
+            "hour": "3",
+            "minute": "30",
+            "day_of_week": "*"
+        },
+        "args": ""
+    },
+    "termination_report": {
+        "schedule": {
+            "hour": "3",
+            "minute": "30",
+            "day_of_week": "*"
+        },
+        "args": ""
+    },
+    "widget_report": {
+        "schedule": {
+            "hour": "4",
+            "minute": "0",
+            "day_of_week": "*"
+        },
+        "args": ""
+    },
+    "shake_points_report": {
+        "schedule": {
+            "hour": "1",
+            "minute": "15",
+            "day_of_week": "*"
+        },
+        "args": ""
+    },
+    "daily_active_user_report": {
+        "schedule": {
+            "hour": "5",
+            "minute": "00",
+            "day_of_week": "*"
+        },
+        "args": ""
+    }
+}

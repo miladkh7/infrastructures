@@ -1,0 +1,29 @@
+{
+	"clients": [
+		{
+			"display_name": "dev",
+			"id": "6779ef20e75817b79602",
+			"description": "Postman",
+			"otp_hash": "NGMI"
+		},
+		{
+			"display_name": "openapi",
+			"id": "e27ebceb227f8e3a4de7a05ed59caa50",
+			"description": "Swagger",
+			"otp_hash": "NGMI"
+		},
+		{
+			"display_name": "web",
+			"id": "4725a997e94b372b1c26e425086f4a17",
+			"description": "PWA",
+			"otp_hash": "NGMI"
+		},
+		{
+			"display_name": "application",
+			"id": "51c5521c76622703ad7d230764ee2dca",
+			"secret": "d4e329baa90c6f50da29a05f315150dab53c85fe17b31004cccefd1e750d5e50",
+			"description": "Direct download",
+			"otp_hash": "CHANGE ME"
+		}
+	]
+}
