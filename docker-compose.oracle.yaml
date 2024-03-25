@@ -1,0 +1,42 @@
+version: '3.8'
+services:
+  oracle:
+    image: container-registry.oracle.com/database/express:latest
+    ports:
+      - '1521:1521'
+      - 5500:5500
+    environment:
+      - ORACLE_ALLOW_REMOTE=true
+      - ORACLE_PWD=Oracle_123
+      - ORACLE_PDB=ORCLPDB1
+      # - ORACLE_SID=ORCLCDB
+# #         - "ORACLE_PWD=oracle"
+# #         # schema of the dump you want to import
+# #         - "SOURCE_SCHEMA=change-or-delete-me"
+# #         # tablespace of the dump you want to import
+# #         - "SOURCE_TABLESPACE=change-or-delete-me"
+# #         # you may want to exclude `GRANT`: `EXCLUDE=USER,GRANT', if your dump contains them
+# #         # if you dont have anything to exclude, remove the variable
+# #         - "EXCLUDE=user"
+
+
+    # volumes:
+    #   - oracle_data:/opt/oracle/oradata
+    #   - oracle_scripts:/docker-entrypoint-initdb.d
+    #   - oracle-backup:/opt/oracle/backup
+    #         - ./dump:/opt/oracle/dump
+
+    networks:
+      - oracle-network
+#     healthcheck:
+#       test: ["CMD", "sqlplus", "-L", "sys/Oracle_123@//localhost:1521/ORCLCDB as sysdba", "@healthcheck.sql"]
+#       interval: 30s
+#       timeout: 10s
+#       retries: 5
+volumes:
+  oracle_data:
+  oracle_scripts:
+  oracle-backup:
+networks:
+  oracle-network:
+    driver: bridge
