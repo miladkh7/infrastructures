@@ -1,7 +1,9 @@
 include:
-  - docker-compose.worker.yaml
-  - docker-compose.sentry.yaml
-  - redis/docker-compose.redis.yaml
-  - docker-compose.monitor.yaml
-  - docker-compose.mock.yaml
   - docker-compose.base.yaml
+  - docker-compose.oracle.yaml
+  - docker-compose.minio.yaml
+  - docker-compose.worker.yaml
+  - redis/docker-compose.redis.yaml
+  # - docker-compose.mock.yaml
+  # # - docker-compose.sentry.yaml
+  # # - docker-compose.monitor.yaml
