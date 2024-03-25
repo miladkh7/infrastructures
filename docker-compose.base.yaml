@@ -10,7 +10,7 @@ services:
     volumes:
       - mongodb_data_container:/data/db
     networks:
-      - baseNetwork
+      - internal-network
   filebrowser:
     image: hurlenko/filebrowser
     user: "root:root"
@@ -22,6 +22,19 @@ services:
     environment:
       - FB_BASEURL=/filebrowser
     restart: always
+
+  rabbitmq_server:
+    image: rabbitmq:3-management
+    ports:
+      # Expose the port for the worker to add/get tasks
+      - 5672:5672
+      # OPTIONAL: Expose the GUI port
+      - 15672:15672
+    networks:
+      - internal-network
+
+
+
 volumes:
   mongodb_data_container:
   rsa: 
@@ -37,5 +50,10 @@ volumes:
       device: ./files
       o: bind
 
+
 networks:
-  baseNetwork:
+  internal-network:
+    driver: bridge
+    name: base_network
+    # labels:
+      # com.docker.compose.network: "network" 
