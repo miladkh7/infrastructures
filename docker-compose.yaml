@@ -1,5 +1,6 @@
 include:
   - docker-compose.base.yaml
+  - docker-compose.mongo.yaml
   - docker-compose.oracle.yaml
   - docker-compose.minio.yaml
   - docker-compose.worker.yaml
