@@ -1,16 +1,6 @@
 version: '3.8'
 services:
-  mongodb_container:
-    image: mongo:latest
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: rootpassword
-    ports:
-      - 27017:27017
-    volumes:
-      - mongodb_data_container:/data/db
-    networks:
-      - internal-network
+
   filebrowser:
     image: hurlenko/filebrowser
     user: "root:root"
@@ -36,7 +26,6 @@ services:
 
 
 volumes:
-  mongodb_data_container:
   rsa: 
     driver: local
     driver_opts:
