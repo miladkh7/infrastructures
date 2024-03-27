@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  mailpit:
+    image: docker.io/axllent/mailpit:latest
+    container_name: local_mailpit
+    ports:
+      - "8025:8025"
+    networks:
+      - internal-network
+networks:
+  internal-network:
+    driver: bridge
+    name: base_network
+    external: true
+
