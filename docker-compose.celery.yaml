@@ -1,0 +1,58 @@
+version: '3.8'
+services:
+  celerybeat:
+  <<: *django
+  image: sdfg_dfg_local_celerybeat
+  container_name: sdfg_dfg_local_celerybeat
+  depends_on:
+    - redis
+    - postgres
+    - mailpit
+  ports: []
+  command: /start-celerybeat
+
+  flower:
+    <<: *django
+    image: sdfg_dfg_local_flower
+    container_name: sdfg_dfg_local_flower
+    ports:
+      - '5555:5555'
+    command: /start-flower
+
+  worker: &wokermain
+    # Build using the worker Dockerfile
+    build:
+      context: .
+      dockerfile: Dockerfile.worker
+    # Need to access the database
+    # OPTIONAL: If you worker needs to access your db that is deployed
+    # locally, then make the network mode as host.
+    # network_mode: host
+    # Pass the rabbitmq_uri as env varible in order to
+    # connect to our service
+    
+    environment:
+      # NOTE: Below we are using 127.0.0.1 because this container
+      # will run on the host network, thus it will have access to the
+      # host network.
+      # If it would not have run locally, we would have had to
+      # connect using the service name like following:
+      # amqp:rabbitmq_server:5672
+      rabbitmq_uri: amqp://127.0.0.1:5672
+    # depends_on: 
+    #   - rabbitmq_server
+    volumes:
+      - app:/app
+
+    networks:
+      - local-network
+
+networks:
+  local-network:
+    name: base_network
+    external: true
+  # worker2:
+  #   <<: *wokermain
+
+volumes:
+  app:
