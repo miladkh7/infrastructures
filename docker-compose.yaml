@@ -4,6 +4,7 @@ include:
   - docker-compose.oracle.yaml
   - docker-compose.minio.yaml
   - docker-compose.worker.yaml
+  - docker-compose.mail.yaml
   - redis/docker-compose.redis.yaml
   # - docker-compose.mock.yaml
   # # - docker-compose.sentry.yaml
