@@ -1,0 +1,66 @@
+version: '3.8'
+services:
+  traefik:
+    image: traefik:v2.11
+
+    # build:
+    #   context: .
+    #   dockerfile: ./traefik/Dockerfile
+
+    volumes:
+      # So that Traefik can listen to the Docker events
+      - /var/run/docker.sock:/var/run/docker.sock
+    # volumes:
+      # - production_traefik:/etc/traefik/acme
+    restart: always
+    command: --api.insecure=true --providers.docker
+    ports:
+      - '0.0.0.0:80:80'
+      - '0.0.0.0:443:443'
+      - '0.0.0.0:5555:5555'
+            # The Web UI (enabled by --api.insecure=true)
+      - "8080:8080"
+    networks:
+      - traefik-network    
+    # labels:
+    #   - "traefik.enable=true"
+    #   - "traefik.http.routers.api.rule=PathPrefix(`/api`)"
+    #   - "traefik.http.middlewares.redirect-to-v2.redirectregex.regex=^/api/reporting/v1/(.*)"
+    #   - "traefik.http.middlewares.redirect-to-v2.redirectregex.replacement=/api/reporting/v2/$${1}"
+    #   - "traefik.http.routers.api.middlewares=redirect-to-v2@docker"
+    # labels:
+    #   - "traefik.http.middlewares.redirect-v1-to-v2.redirectregex.regex=^http://localhost:8000/api/reporting/v1/(.*)"
+    #   - "traefik.http.middlewares.redirect-v1-to-v2.redirectregex.replacement=http://localhost:8000/api/reporting/v2/$$1"
+    #   - "traefik.http.middlewares.redirect-v1-to-v2.redirectregex.permanent=true"
+    #   - "traefik.http.routers.reporting-v1-to-v2.rule=PathPrefix(`/api/reporting/v1/`)"
+    #   - "traefik.http.routers.reporting-v1-to-v2.service=reporting-v1-to-v2"
+    #   - "traefik.http.services.reporting-v1-to-v2.loadbalancer.server.url=http://localhost:8000/api/reporting/v2/"
+
+
+
+  whoami:
+    # A container that exposes an API to show its IP address
+    image: traefik/whoami
+    labels:
+      - "traefik.http.routers.whoami.rule=Host(`whoami.docker.localhost`)"
+
+    # networks:
+    #   - traefik-network    
+
+      # - "traefik.http.routers.whoami.entrypoints=web"
+      # - "traefik.http.routers.whoami.middlewares=redirector-redirect"
+      # - "traefik.http.middlewares.redirector-redirect.replacepathregex.regex=^/foo/(.*)"
+      # - "traefik.http.middlewares.redirector-redirect.replacepathregex.replacement=/bar/$$1"
+  # redirector:
+  #   image: traefik:v2.11
+  #   labels:
+  #     - "traefik.enable=true"
+  #     - "traefik.http.routers.redirector.rule=Host(`localhost`) && PathPrefix(`/api/reporting/v1/`)"
+  #     - "traefik.http.routers.redirector.middlewares=redirector-redirect@docker"
+  #     - "traefik.http.middlewares.redirector-redirect.redirectregex.regex=^localhost/api/reporting/v1"
+  #     - "traefik.http.middlewares.redirector-redirect.redirectregex.replacement=localhost:8000/api/reporting/v1"
+
+networks:
+  traefik-network:
+    name: base_network
+    external: true

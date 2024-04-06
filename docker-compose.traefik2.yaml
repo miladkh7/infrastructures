@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  traefik:
+    # image: traefik:v2.11
+
+    build:
+      context: .
+      dockerfile: ./traefik/Dockerfile
+
+
+    # volumes:
+      # - production_traefik:/etc/traefik/acme
+
+    command: --api.insecure=true --providers.docker
+    ports:
+      - '0.0.0.0:80:80'
+      - '0.0.0.0:443:443'
+      - '0.0.0.0:5555:5555'
+      #       # The Web UI (enabled by --api.insecure=true)
+      # - "8080:8080"
+    networks:
+      - traefik-network      
+networks:
+  traefik-network:
+    name: base_network
+    external: true
