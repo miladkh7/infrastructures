@@ -11,7 +11,7 @@ services:
       volumes:
         - mongodb_data_container:/data/db
       networks:
-        - internal-network
+        - mongo-network
   mongo-gui:
     container_name: "mongo-gui"
     image: ugleiton/mongo-gui
@@ -21,14 +21,15 @@ services:
     environment:
     - MONGO_URL=mongodb://${MONGO_USERNAME:-ROOTNAME}:${MONGO_PASSWORD:-ROOTNAME}@${MONGO_HOST:-mongodb}:${MONGO_PORT:-27017}
 
-
+    networks:
+        - mongo-network
     
 
 volumes:
   mongodb_data_container:
 
 networks:
-  internal-network:
+  mongo-network:
     driver: bridge
     name: base_network
     external: true

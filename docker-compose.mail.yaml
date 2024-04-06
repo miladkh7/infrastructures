@@ -6,9 +6,9 @@ services:
     ports:
       - "8025:8025"
     networks:
-      - internal-network
+      - mail-network
 networks:
-  internal-network:
+  mail-network:
     driver: bridge
     name: base_network
     external: true
