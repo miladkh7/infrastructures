@@ -20,3 +20,15 @@ services:
     #   - type: bind
     #     source: .
     #     target: /config
+    # networks:
+    #   - local-network
+
+    labels:
+      - "traefik.enable=true"
+      - "treafik.http.routers.mockserver.rule=Host(`mock.localhost`)"
+      - "treafik.http.services.mockserver.loadbalancer.server.port=1080"
+
+networks:
+  local-network:
+    name: base_network
+    external: true
