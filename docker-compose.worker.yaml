@@ -32,13 +32,6 @@ services:
 
 
 
-  rabbitmq_server:
-    image: rabbitmq:3-management
-    ports:
-      # Expose the port for the worker to add/get tasks
-      - 5672:5672
-      # OPTIONAL: Expose the GUI port
-      - 15672:15672
 
 
 
