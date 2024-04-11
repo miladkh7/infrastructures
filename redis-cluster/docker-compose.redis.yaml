@@ -3,6 +3,10 @@ version: '3'
 services:
   redis-cluster:
     image: redis:latest
+    env_file:
+      - ../.env
+    environment:
+      - REDIS_PASSWORD=${REDIS_PASSWORD:-REDIS_PASSWORD}
 
     ports:
       - 6379:6379
@@ -25,11 +29,11 @@ services:
       && redis-server /usr/local/etc/redis/7004/4.conf --daemonize yes
       && redis-server /usr/local/etc/redis/7005/5.conf --daemonize yes
       && sleep 3
-      && redis-cli -a 1 --cluster create  127.0.0.1:6379  127.0.0.1:7000 127.0.0.1:7001 127.0.0.1:7002 127.0.0.1:7003 127.0.0.1:7004 127.0.0.1:7005 --cluster-replicas 1 --cluster-yes
+      && redis-cli -a REDIS_PASSWORD --cluster create  127.0.0.1:6379  127.0.0.1:7000 127.0.0.1:7001 127.0.0.1:7002 127.0.0.1:7003 127.0.0.1:7004 127.0.0.1:7005 --cluster-replicas 1 --cluster-yes
       && tail -f /dev/null"
 
-    # networks:
-    #   - redis-network
+    networks:
+      - redis-network
 
 
 
@@ -49,10 +53,10 @@ services:
 #       - redis-cluster
 #     # networks:
 #     #   - redis-network
-# networks:
-#   redis-network:
-#     driver: bridge
-#     name: base_network
-#     external: true
+networks:
+  redis-network:
+    driver: bridge
+    name: base_network
+    external: true
 
 
