@@ -1,0 +1,58 @@
+version: '3'
+
+services:
+  redis-cluster:
+    image: redis:latest
+
+    ports:
+      - 6379:6379
+      - 7000:7000
+      - 7001:7001
+      - 7002:7002
+      - 7003:7003
+      - 7004:7004
+      - 7005:7005
+
+    volumes:
+      - ./cluster-confings/:/usr/local/etc/redis
+    command: >
+      bash -c " ls
+      && redis-server /usr/local/etc/redis/redis.conf --daemonize yes
+      && redis-server /usr/local/etc/redis/7000/0.conf --daemonize yes
+      && redis-server /usr/local/etc/redis/7001/1.conf --daemonize yes
+      && redis-server /usr/local/etc/redis/7002/2.conf --daemonize yes
+      && redis-server /usr/local/etc/redis/7003/3.conf --daemonize yes
+      && redis-server /usr/local/etc/redis/7004/4.conf --daemonize yes
+      && redis-server /usr/local/etc/redis/7005/5.conf --daemonize yes
+      && sleep 3
+      && redis-cli -a 1 --cluster create  127.0.0.1:6379  127.0.0.1:7000 127.0.0.1:7001 127.0.0.1:7002 127.0.0.1:7003 127.0.0.1:7004 127.0.0.1:7005 --cluster-replicas 1 --cluster-yes
+      && tail -f /dev/null"
+
+    # networks:
+    #   - redis-network
+
+
+
+#   redis_commander:
+#     image: rediscommander/redis-commander:latest
+#     container_name: redis_web
+#     environment:
+#      - IS_CLUSTER=true
+#      - CLUSTER_NO_TLS_VALIDATION=true
+#      - REDIS_HOSTS=local:redis-cluster:7000:1
+#       # CLUSTERS: "[localhost:7000:0:1, localhost:7001]"
+#       # REDIS_USERNAME: "default"
+#       # REDIS_PASSWORD: "1"
+#     ports:
+#       - "5000:8081"
+#     depends_on:
+#       - redis-cluster
+#     # networks:
+#     #   - redis-network
+# networks:
+#   redis-network:
+#     driver: bridge
+#     name: base_network
+#     external: true
+
+
