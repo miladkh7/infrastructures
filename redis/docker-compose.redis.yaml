@@ -28,7 +28,7 @@ services:
     command: [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
     networks:
       redis_cluster_net:
-        ipv4_address: 173.18.0.2
+        ipv4_address: 173.19.0.2
 
   redis_2:
     image: 'redis:latest'
@@ -41,7 +41,7 @@ services:
     command: [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
     networks:
       redis_cluster_net:
-        ipv4_address: 173.18.0.3
+        ipv4_address: 173.19.0.3
 
   redis_3:
     image: 'redis:latest'
@@ -54,7 +54,7 @@ services:
     command: [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
     networks:
       redis_cluster_net:
-        ipv4_address: 173.18.0.4
+        ipv4_address: 173.19.0.4
   
   redis_4:
     image: 'redis:latest'
@@ -67,7 +67,7 @@ services:
     command: [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
     networks:
       redis_cluster_net:
-        ipv4_address: 173.18.0.5
+        ipv4_address: 173.19.0.5
 
   redis_5:
     image: 'redis:latest'
@@ -80,7 +80,7 @@ services:
     command: [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
     networks:
       redis_cluster_net:
-        ipv4_address: 173.18.0.6
+        ipv4_address: 173.19.0.6
   
   redis_6:
     image: 'redis:latest'
@@ -93,7 +93,7 @@ services:
     command: [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
     networks:
       redis_cluster_net:
-        ipv4_address: 173.18.0.7
+        ipv4_address: 173.19.0.7
 
   # Ephemeral container to create the Redis cluster connections.
   # Once the setup is done, this container shuts down
@@ -104,6 +104,7 @@ services:
       context: .
       dockerfile: Dockerfile
     tty: true
+    command: "tail -f /dev/null"
     depends_on:
       - redis_1
       - redis_2
@@ -113,7 +114,8 @@ services:
       - redis_6
     networks:
       redis_cluster_net:
-        ipv4_address: 173.18.0.8
+        ipv4_address: 173.19.0.8
+        
 
   # Web UI to browse through our Redis data across all nodes
   redis_commander:
@@ -133,7 +135,7 @@ services:
       - cluster_initiator
     networks:
       redis_cluster_net:
-        ipv4_address: 173.18.0.9
+        ipv4_address: 173.19.0.9
 
 # Rename the default network so we can easily identify it
 # Across all containers
@@ -143,4 +145,4 @@ networks:
     ipam:
       driver: default
       config:
-        - subnet: 173.18.0.0/16
+        - subnet: 173.19.0.0/16
