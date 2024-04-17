@@ -7,11 +7,15 @@ services:
     ports:
       - 443:8080
     volumes:
-      - master_files:/data
       - /CONFIG_DIR:/config
+      - app_vol:/data
+      - rsa_vol:/data/rsa
+      - master_vol:/data/files
     environment:
       - FB_BASEURL=/filebrowser
     restart: always
+
+
 
   rabbitmq_server:
     image: rabbitmq:3-management
@@ -25,19 +29,25 @@ services:
 
 
 
+
 volumes:
-  rsa: 
+  app_vol:
+    name: app_volume
+  rsa_vol: 
+    name: rsa_files
     driver: local
     driver_opts:
       type: none
       device: ./rsa
       o: bind
-  master_files: 
+  master_vol: 
+    name: master_files
     driver: local
     driver_opts:
       type: none
       device: ./files
       o: bind
+
 
 
 networks:
