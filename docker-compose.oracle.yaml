@@ -5,6 +5,8 @@ services:
     ports:
       - '1521:1521'
       - 5500:5500
+    # networks:
+    #   - oracel-network
     environment:
       - ORACLE_ALLOW_REMOTE=true
       - ORACLE_PWD=Oracle_123
@@ -19,15 +21,13 @@ services:
 # #         # if you dont have anything to exclude, remove the variable
 # #         - "EXCLUDE=user"
 
-
     # volumes:
     #   - oracle_data:/opt/oracle/oradata
     #   - oracle_scripts:/docker-entrypoint-initdb.d
     #   - oracle-backup:/opt/oracle/backup
     #         - ./dump:/opt/oracle/dump
 
-    networks:
-      - oracle-network
+
 #     healthcheck:
 #       test: ["CMD", "sqlplus", "-L", "sys/Oracle_123@//localhost:1521/ORCLCDB as sysdba", "@healthcheck.sql"]
 #       interval: 30s
@@ -37,6 +37,8 @@ volumes:
   oracle_data:
   oracle_scripts:
   oracle-backup:
+
 networks:
-  oracle-network:
-    driver: bridge
+  oracel-network:
+    name: base_network
+    external: true

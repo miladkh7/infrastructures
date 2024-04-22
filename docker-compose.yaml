@@ -1,11 +1,11 @@
 include:
   - docker-compose.base.yaml
   # - docker-compose.mongo.yaml
-  # - docker-compose.oracle.yaml
+  - docker-compose.oracle.yaml
   # - docker-compose.minio.yaml
   # - docker-compose.worker.yaml
-  # - docker-compose.mail.yaml
-  # - redis/docker-compose.redis.yaml
-  - mockServer/docker-compose.mock.yaml
+  # # - docker-compose.mail.yaml
+  # - redis-cluster/docker-compose.redis.yaml
+  # - mockServer/docker-compose.mock.yaml
   # # - docker-compose.sentry.yaml
   # # - docker-compose.monitor.yaml

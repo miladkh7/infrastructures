@@ -14,18 +14,20 @@ services:
     environment:
       - FB_BASEURL=/filebrowser
     restart: always
-
-
-
-  rabbitmq_server:
-    image: rabbitmq:3-management
-    ports:
-      # Expose the port for the worker to add/get tasks
-      - 5672:5672
-      # OPTIONAL: Expose the GUI port
-      - 15672:15672
     networks:
       - internal-network
+
+
+
+  # rabbitmq_server:
+  #   image: rabbitmq:3-management
+  #   ports:
+  #     # Expose the port for the worker to add/get tasks
+  #     - 5672:5672
+  #     # OPTIONAL: Expose the GUI port
+  #     - 15672:15672
+  #   networks:
+  #     - internal-network
 
 
 
@@ -45,9 +47,8 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: ./files
+      device: ./files2
       o: bind
-
 
 
 networks:
