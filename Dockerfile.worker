@@ -5,7 +5,7 @@ COPY ./ /app/
 
 # We will use internal functions of the API
 # So install all dependencies of the API
-# RUN cd app && pip install -r requirements.txt
+RUN cd app && pip install -r requirements.txt
 
 WORKDIR /app
 
