@@ -1,41 +1,10 @@
 version: '3.8'
 services:
   # app3: 
-  #   container_name: app
-  #   build: 
-  #     context: .
-  #     dockerfile: Dockerfile.app
-  #   # command: "tail -f /dev/null"
-  # #   command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
-  #   volumes:
-  #     - .:/app
-  #   ports:
-  #     - 8000:8000
-  #   restart: always
-  #   depends_on:
-  #     - redis
-  # redis:
-  #   image: redis
-  #   ports:
-  #     - "6379:6379"
-  # celery_worker: &wokermain
-  #   # container_name: celery_worker
-  #   build: .
-  #   command: celery -A celery_worker worker --pool=solo --loglevel=info
-  #   volumes:
-  #     - .:/app
-  #   depends_on:
-  # #     - redis
-  # #     # - app
-  # # # celery_worker2:
-  # # #   <<: *wokermain
 
 
 
-
-
-
-  worker: &wokermain
+  worker: #&wokermain
     # Build using the worker Dockerfile
     build:
       context: .
@@ -55,13 +24,29 @@ services:
       # connect using the service name like following:
       # amqp:rabbitmq_server:5672
       rabbitmq_uri: amqp://127.0.0.1:5672
-    depends_on: 
-      - rabbitmq_server
+    # depends_on: 
+    #   - rabbitmq_server
+    # volumes:
+    #   - app_volume:/app
+    networks:
+      - celery-network
+    entrypoint: "tail -f /dev/null"
     volumes:
-      - app:/app
+      - app_volume:/app
+    working_dir: /app/app
 
   # worker2:
   #   <<: *wokermain
 
 volumes:
-  app:
+  app_volume:
+    name: app_volume
+    external: true
+
+networks:
+  celery-network:
+    driver: bridge
+    name: base_network
+    external: true
+
+
