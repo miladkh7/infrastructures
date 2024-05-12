@@ -15,7 +15,7 @@ services:
     # network_mode: host
     # Pass the rabbitmq_uri as env varible in order to
     # connect to our service
-    
+    # command: "celery -A celeryconfig worker --loglevel=info"
     environment:
       # NOTE: Below we are using 127.0.0.1 because this container
       # will run on the host network, thus it will have access to the
@@ -24,16 +24,16 @@ services:
       # connect using the service name like following:
       # amqp:rabbitmq_server:5672
       rabbitmq_uri: amqp://127.0.0.1:5672
-    # depends_on: 
-    #   - rabbitmq_server
-    # volumes:
-    #   - app_volume:/app
+    depends_on: 
+      - rabbitmq_server
+
     networks:
       - celery-network
-    entrypoint: "tail -f /dev/null"
+    # entrypoint: "tail -f /dev/null"
     volumes:
       - app_volume:/app
-    working_dir: /app/app
+      - packages_volume:/usr/local/lib/python3.9/site-packages
+    working_dir: /app
 
   # worker2:
   #   <<: *wokermain
@@ -42,6 +42,11 @@ volumes:
   app_volume:
     name: app_volume
     external: true
+
+  packages_volume:
+    name: packages_volume
+    external: true
+    
 
 networks:
   celery-network:
