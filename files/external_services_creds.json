@@ -1,0 +1,382 @@
+{
+    "tt_clm360": {
+        "type": "basic",
+        "password_hash": "cmz.vKwLCXKalb2NgeCMAYw/6xzjAFa",
+        "password_salt": "$2a$12$.fAYgFx.xgiljblLDYbbDe"
+    },
+    "ivr700": {
+        "type": "basic",
+        "password_hash": ".Kke1KugQEPupIjkzDGwTrbtow3uUGO",
+        "password_salt": "$2a$12$GQ0hk6SRuJmKY7FX19m9X."
+    },
+    "em_ericsson": {
+        "type": "basic",
+        "password_hash": "qQrQnKpA0.JoUzZbaFjKzC0POBSUZ.y",
+        "password_salt": "$2a$12$isJeNWmKeEzQc3PL0SrpNe"
+    },
+    "ccchat": {
+        "type": "basic",
+        "password_hash": "9szyjdBUfv/3HyT/t.s0bneuvAUK4tC",
+        "password_salt": "$2a$12$5OjnV7dMuLztp73bHZ41x."
+    },
+    "selfcare": {
+        "type": "basic",
+        "password_hash": "Otx9geUCt0MbaDdPEOF3Vvh6.QE/YB2",
+        "password_salt": "$2b$12$Pnq.RAIfeJ9k1nEcd0iAwu"
+    },
+    "acfUser": {
+        "type": "basic",
+        "password_hash": "A5U78jISeQEq8wqGjPgAZFDYrzTtWwO",
+        "password_salt": "$2b$12$WmZfdArhOY9XRrVgMh6CaO"
+    },
+    "adminPanel": {
+        "type": "basic",
+        "password_hash": "A5U78jISeQEq8wqGjPgAZFDYrzTtWwO",
+        "password_salt": "$2b$12$WmZfdArhOY9XRrVgMh6CaO"
+    },
+    "snapp": {
+        "type": "basic",
+        "password_hash": "N4SCE.MYrCoBLBXMDGqmKRv98.gI4u.",
+        "password_salt": "$2b$12$d.mXyeFZKeQastiTYF/jRu"
+    },
+    "snapp_n": {
+        "type": "basic",
+        "password_hash": "4R1vzH.U.mLx53WbPjTiLM.ZbPQjnt.",
+        "password_salt": "$2b$12$/GMZ3m5deLTFZnUlWiDtWe"
+    },
+    "snapp_food": {
+        "type": "basic",
+        "password_hash": "6yY4YybalsP2SDfl1Y4O6mLPoeUmvm6",
+        "password_salt": "$2b$12$Je3EhVuMYsE/wFjus3upT."
+    },
+    "snappfood_n": {
+        "type": "basic",
+        "password_hash": "3kyN6Fbi81PGd5gCzkMNhMZyjhSJ16C",
+        "password_salt": "$2b$12$WJXCnel3PwkpOOkP60E7Ke"
+    },
+    "snapp_market": {
+        "type": "basic",
+        "password_hash": "kJCLldhTlcN/ahTYHX.jimoosFIu0Am",
+        "password_salt": "$2b$12$vq22lsjcHHD6HgODO7IiYO"
+    },
+    "snapp_market_n": {
+        "type": "basic",
+        "password_hash": "BUXShKWydkvQvLgTJeku//UZEwZxDw2",
+        "password_salt": "$2b$12$TwXaoXTPAMGAv06Pi8F9i."
+    },
+    "snapp_trip_n": {
+        "type": "basic",
+        "password_hash": "02cJqQdZHG/mDrrrUhsTsN3XmXsCU0.",
+        "password_salt": "$2b$12$MXqzttW.tUyvM3nC0uwPMu"
+    },
+    "alibaba": {
+        "type": "basic",
+        "password_hash": "1sYfAOMHRviJfcH7vD2ZM0DSq40Zcb6",
+        "password_salt": "$2b$12$Echl8XELYu3jx9pPNdhzcu"
+    },
+    "alibaba_n": {
+        "type": "basic",
+        "password_hash": "fo/SftFoM5PLZTn0mcNjIFojLBed6a6",
+        "password_salt": "$2b$12$1IBr5H7Hi9DloqjjttygV."
+    },
+    "dana_n": {
+        "type": "basic",
+        "password_hash": "T86hof0EcEsbE2oZkTKeohMvvQV4XXi",
+        "password_salt": "$2b$12$iQ8TrNOf5y8.VMMIt0oWgu"
+    },
+    "ichat": {
+        "type": "basic",
+        "password_hash": "OY6wDKfHRYxyT9Pg0djjrEy1rPdKgFK",
+        "password_salt": "$2b$12$TBs95Ya4ef3Rx4/gU0EpD."
+    },
+    "ichat_n": {
+        "type": "basic",
+        "password_hash": "Tp4Tx5BPSgVRTypz0owk.yhlEqhohFG",
+        "password_salt": "$2b$12$lu73U1eqRrbHlqPq8KTQ9O"
+    },
+    "eshop": {
+        "type": "basic",
+        "password_hash": "TpJRU1mYIS0LN69SbAeWjBNPObqL2zu",
+        "password_salt": "$2b$12$pFM18yEcfnbXkN9TzJu/jO"
+    },
+    "eshop_n": {
+        "type": "basic",
+        "password_hash": "8msgIbgbNAPLyWrEQjX1kx49gDMq/FG",
+        "password_salt": "$2b$12$bGziWUdRNrIxU4NqrrHV5."
+    },
+    "ravito": {
+        "type": "basic",
+        "password_hash": "DEfR8R4kPf5j8yzY76R.e0LyH6wVUlm",
+        "password_salt": "$2b$12$4FN7zLZycIC.B5G2rBq1Ze"
+    },
+    "ravito_n": {
+        "type": "basic",
+        "password_hash": "mb9AZFqtVkGYr8GRpnkDh86sLSUxCXe",
+        "password_salt": "$2b$12$qoU/FBhu01qabI89Z1QMJO"
+    },
+    "bimebazar_n": {
+        "type": "basic",
+        "password_hash": "js8x/xPtOyJwQ8GjI/daNHDBEclTLeW",
+        "password_salt": "$2b$12$FN6wOSVX1FefE/JcRrcw.O"
+    },
+    "icescoring_n": {
+        "type": "basic",
+        "password_hash": "HR68ArzRPP8cZMufKmmpMRI/kG4atEa",
+        "password_salt": "$2b$12$hu8iwTD/YzxffJBsOVQ0R."
+    },
+    "pishvaz_n": {
+        "type": "basic",
+        "password_hash": "ZkQ0YUBo4Uch8v6j22oyrB9wcjeK4R2",
+        "password_salt": "$2b$12$V/U0T7O2znvZQcpm24MCi."
+    },
+    "pezeshket_n": {
+        "type": "basic",
+        "password_hash": "E6mtNtWihilH4bL2OCufZWHpt1r6Al.",
+        "password_salt": "$2b$12$qnc.KTcDwl296Sv8B1MUkO"
+    },
+    "sportimo": {
+        "type": "basic",
+        "password_hash": "PboHD6HGY.qpUkaLIPq4.WpO/JpzZHe",
+        "password_salt": "$2b$12$LRWjU0U4MQ.0.jz9IccDou"
+    },
+    "sportimo_n": {
+        "type": "basic",
+        "password_hash": "145gvAVYOHZy7sbATxvDLwf.4HuDqDe",
+        "password_salt": "$2b$12$SY6k.bUvkk3ivIovYAAE8."
+    },
+    "adwiseuser_n": {
+        "type": "basic",
+        "password_hash": "US1KVzyJhlbYZ.KIqETjxjAnFHKK1Ym",
+        "password_salt": "$2b$12$EqxnayOFMbbcXwvr.Dm0vu"
+    },
+    "bazigooshi_n": {
+        "type": "basic",
+        "password_hash": "3t91wEsMh9TGd1Ixej/3xL3wQQEiGEe",
+        "password_salt": "$2b$12$Vhb3KFbp5hoKOgUNxaRqn."
+    },
+    "hamrahehushmand_n": {
+        "type": "basic",
+        "password_hash": "XIb9nzJNJxUd8FZE.8cFawsZQhJhMZa",
+        "password_salt": "$2b$12$IjB/LFAZ8l9Qx756CDiUPe"
+    },
+    "aecravanertebat": {
+        "type": "basic",
+        "password_hash": "ijVfhvsrHzY7Berm4q49Lq.U3Nli7RK",
+        "password_salt": "$2b$12$UdJ8VRo7abC23yr51X7lGO"
+    },
+    "aecravanertebat_n": {
+        "type": "basic",
+        "password_hash": "ytS/1adVflvz/Tpxh0BwDIceOyetjpC",
+        "password_salt": "$2b$12$d9NjU/5FkFE.DgyAoD7Nze"
+    },
+    "danaplus_n": {
+        "type": "basic",
+        "password_hash": "BOQOf.UV4q/KaeugqN0OCAILUR98rUC",
+        "password_salt": "$2b$12$0AXVjATWyxdnCYz/2Jh1P."
+    },
+    "snapp_shop": {
+        "type": "basic",
+        "password_hash": "W0q28x2uzJ176Ik8GMpSZO3.oKPK/Qe",
+        "password_salt": "$2b$12$1BKKvTLZYl7sRpiyKWFhwu"
+    },
+    "snapp_shop_n": {
+        "type": "basic",
+        "password_hash": "zwR530fFysPurwtmrv0hbWPSB5MAGJC",
+        "password_salt": "$2b$12$a4.cfVqxjqb5kaHpXulFV."
+    },
+    "sahamyab_n": {
+        "type": "basic",
+        "password_hash": "LWum1sKFQssu3mEIfhEwARES/oWbt0G",
+        "password_salt": "$2b$12$etpix/Z2ha/gPxaUWNIRk."
+    },
+    "agahbrokerage_n": {
+        "type": "basic",
+        "password_hash": "8lleycgsm9fj7ud2tu9ZBDiRQwd0Bhm",
+        "password_salt": "$2b$12$t/vzYfkr56WvSO4v77rqle"
+    },
+    "torob_n": {
+        "type": "basic",
+        "password_hash": "LsjAbVk2KFggxDe3olHq.UVTr4ZC.Te",
+        "password_salt": "$2b$12$uyfwOq/HKgqByXkroFqlzu"
+    },
+    "bimehcom_n": {
+        "type": "basic",
+        "password_hash": "6gSkk5IH6sxoI27AYN9bg/Ej64Ub6v2",
+        "password_salt": "$2b$12$IMnzqIEkiz0fR1xgrnsyi."
+    },
+    "karnameh_n": {
+        "type": "basic",
+        "password_hash": "h2/flE4AENr5G.y.DXAT4cb3tQTJLXm",
+        "password_salt": "$2b$12$3XeX5cVIgpQ62g4v4faG4."
+    },
+    "digikalajet_n": {
+        "type": "basic",
+        "password_hash": "DKHDE9aQSQVQJwiU9Y8nrq55uicxv3m",
+        "password_salt": "$2b$12$YRNoaGfQF.3xKjDqjMNL0e"
+    },
+    "basalam_n": {
+        "type": "basic",
+        "password_hash": "fmvtZKuaxgnoIBCpppsShg/p4vxrJc6",
+        "password_salt": "$2b$12$1hIfdnR0tJaYyNTTRKLzVu"
+    },
+    "badesaba_n": {
+        "type": "basic",
+        "password_hash": ".XDKo9RY/ILq8i0fH6oIupWvMioaft.",
+        "password_salt": "$2b$12$jcfvemPGwtoxI8oMRKCOJ."
+    },
+    "digikala_n": {
+        "type": "basic",
+        "password_hash": "kI1j4HOIiFTcgIoghbyIw9uHkfwnyji",
+        "password_salt": "$2b$12$U3l2TBPqAUgxa0F7.BdJc."
+    },
+    "saman_n": {
+        "type": "basic",
+        "password_hash": "n2J7vgqxK2CXvf4vwonC1TWlN2SgQ8y",
+        "password_salt": "$2b$12$F2JNf4DJrAnAe1DOEIEQxe"
+    },
+    "acharbaz_n": {
+        "type": "basic",
+        "password_hash": "RgxVKnKxlJPB8PmkUBEWH4G7Wkg9wQG",
+        "password_salt": "$2b$12$lp3kGQprSTDaXbDd4qsnb."
+    },
+    "snappexpress_n": {
+        "type": "basic",
+        "password_hash": "pGhIHYow3zBGZ54QLXbRPi8rxUPSUWe",
+        "password_salt": "$2b$12$4cuqLXaagZGGSzQFtRBKCO"
+    },
+    "aria_n": {
+        "type": "basic",
+        "password_hash": "huqVhLoiHiy4Qcpa7gXKaYfxtZfyjn6",
+        "password_salt": "$2b$12$5Yq2bl0YSb5ETYYXj5wXQ."
+    },
+    "postex_n": {
+        "type": "basic",
+        "password_hash": "/t6fgyvz2rSsrUst9awY9ndY0SIZ7GC",
+        "password_salt": "$2b$12$kjU3nwVe9b01DL1/B4RRnu"
+    },
+    "ostadkar_n": {
+        "type": "basic",
+        "password_hash": "3KnVLARL2wi0ThW/PKDl1tnKBfp6Mry",
+        "password_salt": "$2b$12$/rRbSbUcdaj2uqfi.fIh6u"
+    },
+    "zireh_n": {
+        "type": "basic",
+        "password_hash": "b7S7v1uytpFCWxODtZINeHGXr3ghQ8O",
+        "password_salt": "$2b$12$Fh1xwS3qJCXoENr6Fndqx."
+    },
+    "snappshop_n": {
+        "type": "basic",
+        "password_hash": "RMPaTdLLEGfR7uwYkDZQKhYHxw1sECO",
+        "password_salt": "$2b$12$pRg2vXU404jK6AmG73zD2O"
+    },
+    "ghabzino_n": {
+        "type": "basic",
+        "password_hash": "KHbaO4UzJ/cuUUwu3LUi1u8a8WF.7gG",
+        "password_salt": "$2b$12$AyBPJc9273vfMjmR7adgF."
+    },
+    "bahar_wallet_n": {
+        "type": "basic",
+        "password_hash": "ME.uqWik4BHNEV55i.LxBaf9uCiOE1e",
+        "password_salt": "$2b$12$IPLuGyf/XfljpQilyNm3f."
+    },
+    "daap_n": {
+        "type": "basic",
+        "password_hash": "47Q9gDF/Cy/CbM6TBafYm/jSiKBSWpa",
+        "password_salt": "$2b$12$fHE9OXVpn33ReTWSffecJu"
+    },
+    "takhfifan_n": {
+        "type": "basic",
+        "password_hash": "PNxWc6r4B6dnnNRNG7zAZNJT4V9FwQW",
+        "password_salt": "$2b$12$ruHTX5BYWn07raU2s6Ssuu"
+    },
+    "tara_n": {
+        "type": "basic",
+        "password_hash": "6jhxOm56lky7Apm1Ea634hMs6QUXrme",
+        "password_salt": "$2b$12$xV5bHI7y449pYu1nAqcqEO"
+    },
+    "lenz_n": {
+        "type": "basic",
+        "password_hash": "ItEZFtrOaTxnmLHlaPWjWRSmAX9HgfS",
+        "password_salt": "$2b$12$ryQ2MwQ0a0EMpOb.XR2kkO"
+    },
+    "arash_n": {
+        "type": "basic",
+        "password_hash": "/2K54gPwTBrCO2x/.r8q64BzqqlLBWC",
+        "password_salt": "$2b$12$j1LdBAH99OkTz6le70vbce"
+    },
+    "tarahan_n": {
+        "type": "basic",
+        "password_hash": "eJzljpnRQ3h2hPaZnP02hNF6rQor56u",
+        "password_salt": "$2b$12$JG6m4hArvUMFpPdVj89eHO"
+    },
+    "cabsnapp_n": {
+        "type": "basic",
+        "password_hash": "D4XNV36w0KH3l.qvm/mZJG6BwHMJFA6",
+        "password_salt": "$2b$12$iZsqPbxFRKCS1mAtMwy1oe"
+    },
+    "ng_myirancell_n": {
+        "type": "basic",
+        "password_hash": "8Vp56/86ZqXwULUieCB.nVriZxp4IPe",
+        "password_salt": "$2b$12$qseILLxYKZXXbU4/lfCQZe"
+    },
+    "chance_n": {
+        "type": "basic",
+        "password_hash": "zaH9Hwm158b8xW0.6lJQrsJMuemGIMS",
+        "password_salt": "$2b$12$QAXjs7TEBd40T4KBEVDOq."
+    },
+    "banket_n": {
+        "type": "basic",
+        "password_hash": "favEib0R..F3U.REy.So0wUuoSYHopO",
+        "password_salt": "$2b$12$BE8kgUi0VVYTSPjXbJ6.FO"
+    },
+    "dayan": {
+        "type": "basic",
+        "password_hash": "3uMVYeAl3jzKY3TyXTm.YxfICJntx0G",
+        "password_salt": "$2b$12$SAQr6zEu87fFkg3kF0ypOu"
+    },
+    "okala": {
+        "type": "basic",
+        "password_hash": "8JDtj0W.Bw5dl6Cgt8dKOBV2siLhS4K",
+        "password_salt": "$2b$12$3RNS8zrNoUOJWXGC9lAk/u"
+    },
+    "khedmatAzMa": {
+        "type": "basic",
+        "password_hash": "TcDFHIQpmOZOSblXMvM3YVfdSy8X2t6",
+        "password_salt": "$2b$12$CogyDY7PWTFnCfCwpRewTe"
+    },
+    "changal": {
+        "type": "basic",
+        "password_hash": "iodjbLfz5WNMXNHRUhPhqjdaaek5VWe",
+        "password_salt": "$2b$12$x39HUGpYFkkwo789MAQMZu"
+    },
+    "dr_dr": {
+        "type": "basic",
+        "password_hash": "LYQWeqadusP6nVAfcxwStYYnRCWGRyy",
+        "password_salt": "$2b$12$x39HUGpYFkkwo789MAQMZu"
+    },
+    "haal": {
+        "type": "basic",
+        "password_hash": "aVhJy.n7WcAC9SaGg/f3Pc5VH3Q4S2S",
+        "password_salt": "$2b$12$V//Af094NqYn5YmqgGES0."
+    },
+    "top": {
+        "type": "basic",
+        "password_hash": "PG9J9QnI0xp9J9zpV/rOjXDFAiL7JJm",
+        "password_salt": "$2b$12$HcO36BC1lcdYnK9ZX822y."
+    },
+    "gamiwise": {
+        "type": "basic",
+        "password_hash": "vJRa.IE1Yit/8wRuZQfzsHbFymzdCvK",
+        "password_salt": "$2b$12$tfMJvaLnXJD0mFcU4PGgwO"
+    },
+    "NGMY": {
+        "type": "basic",
+        "password_hash": "hjj1gK8hWSl.ikQYagqUw/d9a3hV34W",
+        "password_salt": "$2b$12$z6Xg4TO76N1752HYdDAAcu"
+    },
+    "CVM": {
+        "type": "basic",
+        "password_hash": "st2d9Ku3Le77gRrkUPe3pgCgOAbJa96",
+        "password_salt": "$2b$12$8B6moI.9JuuLQzJALHVFCO"
+    }
+}

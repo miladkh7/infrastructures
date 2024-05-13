@@ -280,7 +280,6 @@ code,description_en,description_fa,service_type,package_size,package_unit,lob,du
 85310,30 Days 7 GB + 300 min on-net & off-net voice + 600 MB for Aparat + 200 MB for GAP + 5000T Charkhooneh Credit,30 روزه 7 گیگ، 300 دقیقه مکالمه ایرانسلی و غیرایرانسلی، 600 مگ مختص آپارات، 200 مگ مختص گپ + 5هزار تومان اعتبار چارخونه,Prepaid,8,GB,GSM,Monthly
 33010,30 Days 500MB + 5000T Charkhooneh Credit,30 روزه 500 مگ با 5000 تومان اعتبار چارخونه,Prepaid,500,MB,GSM,Monthly
 61654,Weekly 1GB for Aparat,هفتگی 1 گیگ مختص آپارات,Prepaid,1,GB,GSM,Weekly
-61653,Weekly 200MB for GAP,هفتگی 200 مگ مختص گپ,Prepaid,200,MB,GSM,Weekly
 33011,30 Days 1GB + 5000T Charkhooneh Credit,30 روزه 1 گیگ با 5000 تومان اعتبار چارخونه,Prepaid,1,GB,GSM,Monthly
 33012,30 Days 2GB + 5000T Charkhooneh Credit,30 روزه 2 گیگ با 5000 تومان اعتبار چارخونه,Prepaid,2,GB,GSM,Monthly
 33013,30 Days 3GB + 5000T Charkhooneh Credit,30 روزه 3 گیگ با 5000 تومان اعتبار چارخونه,Prepaid,3,GB,GSM,Monthly
@@ -424,7 +423,7 @@ code,description_en,description_fa,service_type,package_size,package_unit,lob,du
 35016,30 Days 7GB + 5000T Charkhooneh Credit,30 روزه 7 گیگ با 5000 تومان اعتبار چارخونه,Postpaid,7,GB,GSM,Monthly
 35015,30 Days 5GB + 5000T Charkhooneh Credit,30 روزه 5 گیگ با 5000 تومان اعتبار چارخونه,Postpaid,5,GB,GSM,Monthly
 35014,30 Days 4GB + 5000T Charkhooneh Credit,30 روزه 4 گیگ با 5000 تومان اعتبار چارخونه,Postpaid,4,GB,GSM,Monthly
-63277,Weekly 200MB for GAP,هفتگی 200 مگ مختص گپ,Postpaid,200,MB,GSM,Weekly
+
 63278,Weekly 1GB for Aparat,هفتگی 1 گیگ مختص آپارات,Postpaid,1,GB,GSM,Weekly
 85567,30 Days 7 GB + 300 min on-net & off-net voice + 600 MB for Aparat + 200 MB for GAP + 5000T Charkhooneh Credit,30 روزه 7 گیگ، 300 دقیقه مکالمه ایرانسلی و غیرایرانسلی، 600 مگ مختص آپارات، 200 مگ مختص گپ + 5هزار تومان اعتبار چارخونه,Postpaid,8,GB,GSM,Monthly
 85566,30 Days 7 GB + 300 min on-net voice + 500 MB for Aparat + 400 MB for GAP + 5000T Charkhooneh Credit,30 روزه 7 گیگ، 300 دقیقه مکالمه ایرانسلی، 500 مگ مختص آپارات، 400 مگ مختص گپ + 5هزار تومان اعتبار چارخونه + 5هزار تومان اعتبار چارخونه,Postpaid,8,GB,GSM,Monthly
@@ -2813,7 +2812,6 @@ code,description_en,description_fa,service_type,package_size,package_unit,lob,du
 61656,Smart Bolton 1GB Pre2,بسته هوشمند 1گیگابایتی 2,61656,mb,mb,1018,GPRS,209716,1
 61655,Smart Bolton 1GB Pre1,بسته هوشمند 1گیگابایتی 1,61655,mb,mb,1018,GPRS,209716,1
 61654,Weekly 1GB for Aparat,بسته هفتگی 1گیگابایت آپارات,61654,mb,mb,1018,GPRS,209716,7
-61653,Weekly 200MB for GAP,بسته هفتگی 200مگابایت گپ,61653,mb,mb,1018,GPRS,40960,7
 61328,3GB special Package for MyIrancell,بسته 3گیگابایتی ویژه کاربران,61328,mb,mb,1018,GPRS,629146,20
 87088,Smart  Bolton  2GB,بسته هوشمند2گیگابایتی,87088,mb,mb,1018,GPRS,419431,1
 87087,Smart Bolton  2GB,بسته هوشمند2گیگابایتی,87087,mb,mb,1018,GPRS,419431,1
@@ -5471,7 +5469,7 @@ code,description_en,description_fa,service_type,package_size,package_unit,lob,du
 63848,Smart Bolton 1GB Post2,بسته هوشمند 1گیگابایتی 4,63848,mb,mb,401,GPRS,209716,1
 63847,Smart Bolton 1GB Post1,بسته هوشمند 1گیگابایتی 3,63847,mb,mb,401,GPRS,209716,1
 63278,Weekly 1 GB for Aparat,بسته هفتگی 1گیگابایت آپارات,63278,mb,mb,401,GPRS,209716,7
-63277,Weekly 200 MB for GAP,بسته هفتگی 200 مگابایت گپ,63277,mb,mb,401,GPRS,40960,7
+
 63276,3GB special Package for MyIrancell,بسته 3 گیگابایتی ویژه کاربران,63276,mb,mb,401,GPRS,629146,20
 63846,Smart  Bolton  2 GB Post,بسته هوشمند2گیگابایتی,63846,mb,mb,401,GPRS,419431,1
 63845,Smart Bolton  2 GB Post,بسته هوشمند2گیگابایتی,63845,mb,mb,401,GPRS,419431,1

@@ -1,0 +1,92 @@
+{
+    "myirancel360": [
+        "tt_clm360",
+        "ivr700"
+    ],
+    "event_manager": [
+        "em_ericsson"
+    ],
+    "push_notification": [
+        "ccchat"
+    ],
+    "internal_token": [
+        "selfcare"
+    ],
+    "validate_token": [
+        "snapp",
+        "snapp_n",
+        "snapp_food",
+        "snappfood_n",
+        "snapp_market",
+        "snapp_market_n",
+        "snapp_trip_n",
+        "alibaba",
+        "alibaba_n",
+        "dana_n",
+        "ichat",
+        "ichat_n",
+        "eshop",
+        "eshop_n",
+        "ravito",
+        "ravito_n",
+        "bimebazar_n",
+        "icescoring_n",
+        "pishvaz_n",
+        "pezeshket_n",
+        "sportimo",
+        "sportimo_n",
+        "adwiseuser_n",
+        "bazigooshi_n",
+        "hamrahehushmand_n",
+        "aecravanertebat",
+        "aecravanertebat_n",
+        "danaplus_n",
+        "snapp_shop",
+        "snapp_shop_n",
+        "sahamyab_n",
+        "agahbrokerage_n",
+        "torob_n",
+        "bimehcom_n",
+        "karnameh_n",
+        "digikalajet_n",
+        "basalam_n",
+        "badesaba_n",
+        "digikala_n",
+        "saman_n",
+        "acharbaz_n",
+        "snappexpress_n",
+        "aria_n",
+        "postex_n",
+        "ostadkar_n",
+        "zireh_n",
+        "snappshop_n",
+        "ghabzino_n",
+        "bahar_wallet_n",
+        "daap_n",
+        "takhfifan_n",
+        "tara_n",
+        "lenz_n",
+        "arash_n",
+        "tarahan_n",
+        "cabsnapp_n",
+        "ng_myirancell_n",
+        "chance_n",
+        "banket_n",
+        "dayan",
+        "okala",
+        "khedmatAzMa",
+        "changal",
+        "dr_dr",
+        "haal",
+        "top",
+        "gamiwise"
+    ],
+    "admin_panel_service": [
+        "adminPanel"
+    ],
+    "digital_experience_action": [
+        "NGMY",
+        "CVM",
+        "snapp"
+    ]
+}
