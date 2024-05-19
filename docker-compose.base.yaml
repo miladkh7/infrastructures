@@ -9,9 +9,15 @@ services:
     volumes:
       - /CONFIG_DIR:/config
 
+      # Services Volumes
       - reporting-vol:/data/services/reporting:ro
       # - digital-vol:/data/services/digital:ro
       # - admin_panel_services-vol:/data/services/admin_panel_services:ro
+
+      # Services Volumes
+      - reporting_package-vol:/data/services_packages/reporting:ro
+
+      #
       - rsa_vol:/data/rsa:ro  
       - master_vol:/data/master_files
       # - master_vol:/data/app/files:ro
@@ -40,6 +46,7 @@ services:
 
 volumes:
 
+  # Services
   reporting-vol:
     external: true
   digital-vol-vol:
@@ -47,6 +54,13 @@ volumes:
   admin_panel_services-vol:
     external: true
 
+
+  # packages
+  reporting_package-vol:
+    external: true
+
+
+  
   rsa_vol: 
     name: rsa_files
     driver: local
