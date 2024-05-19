@@ -24,7 +24,7 @@ services:
     networks:
       - celery-network
     # entrypoint: "tail -f /dev/null"
-    entrypoint: "celery -A core.celery worker"
+    entrypoint: "celery -A core.celery worker  --loglevel=info"
     volumes:
       - reporting-vol:/app
       - master_files:/app/files:ro
@@ -43,7 +43,7 @@ services:
       # connect using the service name like following:
       # amqp:rabbitmq_server:5672
       # rabbitmq_uri: amqp://127.0.0.1:5672
-      - rabbitmq_uri=amqp:rabbitmq_server:5672
+      - rabbitmq_uri=amqp://guest:guest@rabbitmq_server2:5672
       - DEBUG_MODE=true
       # CurrentService
       - SERVICE_NAME=${SERVICE_NAME:-reporting} #set
@@ -58,8 +58,8 @@ services:
       - REPORTING_MONGO_DB=mongodb://${MONGO_USERNAME:-ROOTNAME}:${MONGO_PASSWORD:-ROOTNAME}@${MONGO_HOST:-mongodb}:${MONGO_PORT:-27017}/${SERVICE_NAME:-reporting}
       - MONGODB_URL=${MONGODB_URL:-REPORTING_MONGO_DB}
     ## Celery
-      - CELERY_BROKER_URL=amqp:rabbitmq_server:5672
-      - CELERY_BROKER_URL=redis://redis:6379/1
+      - CELERY_BROKER_URL=amqp://guest:guest@rabbitmq_server:5672
+      # - CELERY_BROKER_URL=redis://redis:6379/1
       - CELERY_BACKEND_URL=redis://redis:6379/0
 
     # Oracel
@@ -71,8 +71,8 @@ services:
       - SIM_OPTIONS_SERVICE_ENDPOINT= str 
       - BILL_AND_USAGE_SERVICE_ENDPOINT= str
     ## Other Services datababase
-      - BILL_AND_USAGE_MONGODB_URL= mongodb://${MONGO_USERNAME:-ROOTNAME}:${MONGO_PASSWORD:-ROOTNAME}@${MONGO_HOST:-mongodb}:${MONGO_PORT:-27017}
-      - SIM_OPTIONS_MONGODB_URL= mongodb://${MONGO_USERNAME:-ROOTNAME}:${MONGO_PASSWORD:-ROOTNAME}@${MONGO_HOST:-mongodb}:${MONGO_PORT:-27017}
+      - BILL_AND_USAGE_MONGODB_URL=mongodb://${MONGO_USERNAME:-ROOTNAME}:${MONGO_PASSWORD:-ROOTNAME}@${MONGO_HOST:-mongodb}:${MONGO_PORT:-27017}
+      - SIM_OPTIONS_MONGODB_URL=mongodb://${MONGO_USERNAME:-ROOTNAME}:${MONGO_PASSWORD:-ROOTNAME}@${MONGO_HOST:-mongodb}:${MONGO_PORT:-27017}
 
     ## Upsteram
     ### EDW
@@ -115,7 +115,16 @@ services:
 
   # worker2:
   #   <<: *wokermain
-
+  flower:
+    image: mher/flower:0.9.7
+    command: ['flower', '--broker=amqp://guest:guest@rabbitmq_server:5672', ]
+    
+    networks:
+      - celery-network
+    ports:
+      - '5555:5555'
+    # depends_on:
+    #   - redis
 volumes:
   reporting-vol:
     # name: app_volume
