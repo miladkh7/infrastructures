@@ -8,9 +8,11 @@ services:
       - 443:8080
     volumes:
       - /CONFIG_DIR:/config
-      - app_vol:/data
-      - rsa_vol:/data/rsa
+      - app_vol:/data:ro
+      - rsa_vol:/data/rsa:ro  
       - master_vol:/data/files
+      - master_vol:/data/app/files:ro
+      - ngmy_vol:/data/ngmypackage:ro
     environment:
       - FB_BASEURL=/filebrowser
     restart: always
@@ -19,15 +21,16 @@ services:
 
 
 
-  rabbitmq_server:
-    image: rabbitmq:3-management
-    ports:
-      # Expose the port for the worker to add/get tasks
-      - 5672:5672
-      # OPTIONAL: Expose the GUI port
-      - 15672:15672
-    networks:
-      - internal-network
+  # rabbitmq_server:
+  #   container_name: rabbitmq_server
+  #   image: rabbitmq:3-management
+  #   ports:
+  #     # Expose the port for the worker to add/get tasks
+  #     - 5672:5672
+  #     # OPTIONAL: Expose the GUI port
+  #     - 15672:15672
+  #   networks:
+  #     - internal-network
 
 
 
@@ -35,6 +38,7 @@ services:
 volumes:
   app_vol:
     name: app_volume
+
   rsa_vol: 
     name: rsa_files
     driver: local
@@ -47,13 +51,21 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: ./files2
+      device: ./files
       o: bind
 
+  ngmy_vol: 
+    name: ngmy_packages
+    driver: local
+    driver_opts:
+      type: none
+      device: ./packages
+      o: bind
 
 networks:
   internal-network:
     driver: bridge
     name: base_network
+
     # labels:
       # com.docker.compose.network: "network" 
