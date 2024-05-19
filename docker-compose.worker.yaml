@@ -15,7 +15,26 @@ services:
     # network_mode: host
     # Pass the rabbitmq_uri as env varible in order to
     # connect to our service
-    # command: "celery -A celeryconfig worker --loglevel=info"
+    # command: "python -m celery worker -A app,./core/celery  --loglevel=info"
+    # command: "python -m celery  -A ./core/celery  --loglevel=info"
+
+    # depends_on: 
+    #   - rabbitmq_server
+
+    networks:
+      - celery-network
+    # entrypoint: "tail -f /dev/null"
+    entrypoint: "celery -A core.celery worker"
+    volumes:
+      - reporting-vol:/app
+      - master_files:/app/files:ro
+      - master_files:/app/app/files:ro
+      - packages_volume:/usr/local/lib/python3.9/site-packages:ro
+    working_dir:  /app
+
+
+    env_file:
+      - .env
     environment:
       # NOTE: Below we are using 127.0.0.1 because this container
       # will run on the host network, thus it will have access to the
@@ -23,34 +42,94 @@ services:
       # If it would not have run locally, we would have had to
       # connect using the service name like following:
       # amqp:rabbitmq_server:5672
-      rabbitmq_uri: amqp://127.0.0.1:5672
-    depends_on: 
-      - rabbitmq_server
+      # rabbitmq_uri: amqp://127.0.0.1:5672
+      - rabbitmq_uri=amqp:rabbitmq_server:5672
+      - DEBUG_MODE=true
+      # CurrentService
+      - SERVICE_NAME=${SERVICE_NAME:-reporting} #set
+    # Min IO
+      - MINIO_STORAGE_ACCESS_KEY=${MINIO_ROOT_USER:-ROOTNAME} #set
+      - MINIO_SECRET_KEY=${MINIO_ROOT_PASSWORD:-CHANGEME123} # set
+      - MINIO_BUCKET_NAME=${MINIO_DEFAULT_BUCKETS:-devbucket2}
+      - MINIO_STORAGE_ENDPOINT=${MINIO_STORAGE_ENDPOINT:-127.0.0.1:9011}
+      - MINIO_REGION=local
+    ## Mongo
+      # - MONGODB_URL=mongodb://ROOTNAME:ROOTNAME@$mongodb:27017/reporting
+      - REPORTING_MONGO_DB=mongodb://${MONGO_USERNAME:-ROOTNAME}:${MONGO_PASSWORD:-ROOTNAME}@${MONGO_HOST:-mongodb}:${MONGO_PORT:-27017}/${SERVICE_NAME:-reporting}
+      - MONGODB_URL=${MONGODB_URL:-REPORTING_MONGO_DB}
+    ## Celery
+      - CELERY_BROKER_URL=amqp:rabbitmq_server:5672
+      - CELERY_BROKER_URL=redis://redis:6379/1
+      - CELERY_BACKEND_URL=redis://redis:6379/0
 
-    networks:
-      - celery-network
-    # entrypoint: "tail -f /dev/null"
-    volumes:
-      - app_volume:/app
-      - packages_volume:/usr/local/lib/python3.9/site-packages
-    working_dir: /app
+    # Oracel
+      # - ORACLE_CONNECTION_URL="oracle://username:password@localhost:1521/your_service_name_or_sid"
+      - ORACLE_CONNECTION_URL=oracle://SYSTEM:Oracle_123@localhost:1521/?service_name=XEPDB1
+
+    ## Other Services
+      - NOTIFICATION_SERVICE_ENDPOINT= str 
+      - SIM_OPTIONS_SERVICE_ENDPOINT= str 
+      - BILL_AND_USAGE_SERVICE_ENDPOINT= str
+    ## Other Services datababase
+      - BILL_AND_USAGE_MONGODB_URL= mongodb://${MONGO_USERNAME:-ROOTNAME}:${MONGO_PASSWORD:-ROOTNAME}@${MONGO_HOST:-mongodb}:${MONGO_PORT:-27017}
+      - SIM_OPTIONS_MONGODB_URL= mongodb://${MONGO_USERNAME:-ROOTNAME}:${MONGO_PASSWORD:-ROOTNAME}@${MONGO_HOST:-mongodb}:${MONGO_PORT:-27017}
+
+    ## Upsteram
+    ### EDW
+      - EDW_ENDPOINT= str
+      - EDW_PORT= str
+      - EDW_USERNAME= str
+      - EDW_PASSWORD= str
+      - EDW_UPSTREAMREPORT_PATH= str
+      - EDW_UPSTREAMREPORT_RECON_PATH= str 
+      - EDW_LOGINREPORT_PATH= str 
+      - EDW_LOGINREPORT_RECON_PATH= str 
+
+      - LOGIN_INFO_AGGREGATE_ENDPOINT= str 
+    ## NGPG
+      - NGPG_CHANNEL_APP= str 
+      - NGPG_CHANNEL_WEB= str 
+
+      - CDN_ENDPOINT= str 
+      - CDN_MARKETPLACE_CONFIG= str 
+
+      # not important
+      ## flunet
+      - FLUENTD_HTTP_ENDPOINT= str
+      - FLUENTD_HTTP_PORT= str
+      - FLUENTD_HTTP_TAG= str
+      ## elastic
+      - ELASTICSEARCH_ENDPOINT=${ELASTICSEARCH_ENDPOINT:-http://localhost:9200}
+      - ELASTICSEARCH_USERNAME= str
+      - ELASTICSEARCH_PASSWORD= str
+      - ELASTICSEARCH_PREFIX_INDEX=s
+      
+      - SENTRY_DSN=http://fb12c7da2269813c53e4815027b4afab@sentry-nginx.sentry.svc/31
+
+    ## Redis Cluster
+      - REDIS_CLUSTER_NODES=${REDIS_CLUSTER_NODES:-ROOTNAME}
+      - REDIS_CLUSTER_IP_PORTS=${REDIS_CLUSTER_IP_PORTS:-ROOTNAME}
+      - REDIS_CLUSTER_USERNAME=${REDIS_CLUSTER_USERNAME:-ROOTNAME}
+      - REDIS_CLUSTER_PASSWORD=${REDIS_CLUSTER_PASSWORD:-ROOTNAME}
+      - REDIS_PREFIX=${REDIS_PREFIX:-ROOTNAME}
 
   # worker2:
   #   <<: *wokermain
 
 volumes:
-  app_volume:
-    name: app_volume
+  reporting-vol:
+    # name: app_volume
+    external: true
+  master_files:
     external: true
 
   packages_volume:
-    name: packages_volume
+    name: reporting_package-vol
     external: true
     
 
 networks:
   celery-network:
-    driver: bridge
     name: base_network
     external: true
 
