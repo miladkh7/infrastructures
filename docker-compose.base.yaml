@@ -8,7 +8,7 @@ services:
       - 443:8080
     volumes:
       - /CONFIG_DIR:/config
-      
+
       - reporting-vol:/data/services/reporting:ro
       # - digital-vol:/data/services/digital:ro
       # - admin_panel_services-vol:/data/services/admin_panel_services:ro
@@ -24,16 +24,16 @@ services:
 
 
 
-  # rabbitmq_server:
-  #   container_name: rabbitmq_server
-  #   image: rabbitmq:3-management
-  #   ports:
-  #     # Expose the port for the worker to add/get tasks
-  #     - 5672:5672
-  #     # OPTIONAL: Expose the GUI port
-  #     - 15672:15672
-  #   networks:
-  #     - internal-network
+  rabbitmq_server:
+    container_name: rabbitmq_server
+    image: rabbitmq:3-management
+    ports:
+      # Expose the port for the worker to add/get tasks
+      - 5672:5672
+      # OPTIONAL: Expose the GUI port
+      - 15672:15672
+    networks:
+      - internal-network
 
 
 
