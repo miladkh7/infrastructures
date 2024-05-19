@@ -1,5 +1,6 @@
 version: '3.7'
 x-minio-common: &minio_common
+  container_name: minio
   image: quay.io/minio/minio:latest
   command: server /data --console-address ":9090"
   ports:
@@ -7,8 +8,8 @@ x-minio-common: &minio_common
     - '9090:9090'
   networks:
     - minio-network
-  # volumes:
-  #   - 'minio_data:/data'
+  volumes:
+    - 'minio_data:/data'
   environment:
     - MINIO_ROOT_USER=${MINIO_ROOT_USER:-ROOTNAME}
     - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD:-CHANGEME123}
@@ -24,7 +25,7 @@ services:
   minio1:
     <<: *minio_common
     # networks:
-    # - my_network
+    # - my_networ
     # hostname: minio1
     # volumes:
     #   - type: bind
