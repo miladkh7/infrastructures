@@ -8,10 +8,13 @@ services:
       - 443:8080
     volumes:
       - /CONFIG_DIR:/config
-      - application:/data/apps:ro
+      
+      - reporting-vol:/data/services/reporting:ro
+      # - digital-vol:/data/services/digital:ro
+      # - admin_panel_services-vol:/data/services/admin_panel_services:ro
       - rsa_vol:/data/rsa:ro  
-      - master_vol:/data/files
-      - master_vol:/data/app/files:ro
+      - master_vol:/data/master_files
+      # - master_vol:/data/app/files:ro
       - ngmy_vol:/data/ngmypackage:ro
     environment:
       - FB_BASEURL=/filebrowser
@@ -37,7 +40,11 @@ services:
 
 volumes:
 
-  application-volume:
+  reporting-vol:
+    external: true
+  digital-vol-vol:
+    external: true
+  admin_panel_services-vol:
     external: true
 
   rsa_vol: 
