@@ -55,12 +55,13 @@ services:
       - MINIO_STORAGE_ACCESS_KEY=${MINIO_ROOT_USER:-ROOTNAME} #set
       - MINIO_SECRET_KEY=${MINIO_ROOT_PASSWORD:-CHANGEME123} # set
       - MINIO_BUCKET_NAME=${MINIO_DEFAULT_BUCKETS:-devbucket2}
-      - MINIO_STORAGE_ENDPOINT=${MINIO_STORAGE_ENDPOINT:-127.0.0.1:9011}
+      - MINIO_STORAGE_ENDPOINT=${MINIO_STORAGE_ENDPOINT:-minio:9000}
       - MINIO_REGION=local
     ## Mongo
       # - MONGODB_URL=mongodb://ROOTNAME:ROOTNAME@$mongodb:27017/reporting
       - REPORTING_MONGO_DB=mongodb://${MONGO_USERNAME:-ROOTNAME}:${MONGO_PASSWORD:-ROOTNAME}@${MONGO_HOST:-mongodb}:${MONGO_PORT:-27017}/${SERVICE_NAME:-reporting}
-      - MONGODB_URL=${MONGODB_URL:-REPORTING_MONGO_DB}
+      # - MONGODB_URL=${MONGODB_URL:-REPORTING_MONGO_DB}
+      - MONGODB_URL=mongodb://ngmiReportingUser:CtxobeWvOcuBxzmwgc5R7Q_mk@t3ngmycell-db02.mtnirancell.ir:27100/ngmiReportingDB?authMechanism=SCRAM-SHA-1&authSource=ngmiReportingDB
     ## Celery
       - CELERY_BROKER_URL=amqp://guest:guest@rabbitmq_server:5672
       # - CELERY_BROKER_URL=redis://redis:6379/1
