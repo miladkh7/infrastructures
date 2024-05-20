@@ -24,7 +24,8 @@ services:
     networks:
       - celery-network
     # entrypoint: "tail -f /dev/null"
-    entrypoint: "celery -A core.celery worker  --loglevel=info"
+    # entrypoint: "celery -A core.celery worker  --loglevel=info"
+    command: ["sh","-c","pip install debugpy -t /tmp && python /tmp/debugpy --listen 0.0.0.0:6900 -m celery -A core.celery worker  -l info",]
     volumes:
       - reporting-vol:/app
       - master_files:/app/files:ro
@@ -35,6 +36,9 @@ services:
 
     env_file:
       - .env
+
+    ports:
+      - '6900:6900'
     environment:
       # NOTE: Below we are using 127.0.0.1 because this container
       # will run on the host network, thus it will have access to the
